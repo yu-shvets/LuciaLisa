@@ -1,0 +1,22 @@
+{% extends 'index.html' %}
+
+
+{% block content %}
+
+    <form action="" method="get">
+        {{ filter.form.as_p }}
+        <input type="submit" />
+    </form>
+    <br>
+    {% for item in object_list %}
+
+        <a href="{% url 'item' item.pk  %}">
+        <img src="{{ item.title_image.url }}">
+        <p>{{ item.title }}</p>
+        </a>
+
+        <p>{{ item.specs_set.all.0.price }}</p>
+
+    {% endfor %}
+
+{% endblock content %}

@@ -1,0 +1,20 @@
+{% extends 'index.html' %}
+
+
+{% block content %}
+
+
+        <img src="{{ item.title_image.url }}">
+        <p>{{ item.title }}</p>
+
+        <p>Price: {{ item.specs_set.all.0.price }}</p>
+
+            <form method="post" action="#">
+              {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" />
+              </form>
+
+
+{% endblock content %}
+

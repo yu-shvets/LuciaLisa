@@ -1,0 +1,24 @@
+{% extends 'index.html' %}
+
+
+{% block content %}
+
+
+    {% for item in cart_items %}
+
+        <img src="{{ item.specs.item.title_image.url }}">
+        <p>{{ item.specs.item.title }}</p>
+        <p>{{ item.specs.size }}</p>
+        <p>{{ item.specs.price }}</p>
+        <p>{{ item.quantity }}</p>
+        <p>{{ item.total_price }}</p>
+
+        <p><a class="btn btn-primary" href="{% url 'remove' item.specs.pk %}" role="button">Remove</a></p>
+
+    {% endfor %}
+
+    {% if cart_total %}<h4>{{ cart_total }}</h4>{% endif %}
+
+
+{% endblock content %}
+
