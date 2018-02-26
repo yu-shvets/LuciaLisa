@@ -1,0 +1,132 @@
+.header-box{
+flex-direction: column;
+height: 300px;
+}
+.header-box-shop{
+    margin-top:20px;
+}
+.header-logo{
+    margin-top:20px;
+}
+.header-form{
+text-align:center;
+}
+.news-one-post-title-link{
+    font-size: 25px;
+}
+.news-two-post-title-link{
+    font-size: 25px;
+}
+.news .item-sale{
+    padding-left:15px;
+    padding-right:15px;
+}
+.news .item-sale-description{
+    padding-left:10px;
+    padding-right:10px;
+}
+.test{
+    width:100%;
+}
+.description-text{
+    width:85%;
+    font-size: 16px;
+}
+.footer{
+    height:100%;
+}
+.footer-box-nav-collection{
+    display:block;
+    margin-top:0px;
+}
+.footer-box-nav-collection-sm{
+    margin-top:0px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+}
+.footer-box-nav-collection-sm .footer-item{
+    text-align:center;
+}
+.certificate-boxvisa{
+    margin:0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.certificate-boxliqpay{
+margin-top: 5px;
+margin-bottom: 5px;
+}
+.certificate-boxvisa img{
+    width:100%;
+}
+.certificate-boxliqpay img{
+    width:100%;
+}
+.certificate-boxsmm{
+    margin:0px;
+    display:flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.slider-img{
+    background-size:cover;
+}
+.shop-box-menu{
+    display: flex;
+    flex-direction: column;
+}
+.shop-box-item{
+    padding-top:5px;
+    padding-bottom:5px;
+}
+.certificate{
+    flex-direction: column;
+    height: 120px;
+}
+
+
+.callback-news form{
+    width:100%;
+}
+.callback-news-form-email{
+    padding:0px;
+    width:60%;
+}
+.callback-news-form-button{
+    font-size: 12px;
+    letter-spacing:0px;
+    width:40%;
+    padding:12px;
+}
+.footer-number{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.news-one-post{
+    text-align:center;
+    &-img{
+        float:none;
+        margin:0px;
+    }
+    &-counter{
+    width: 50%;
+    float: left;
+    }
+    &-data{
+        margin-right:0px;
+        width: 50%;
+    }
+}
+.news-two-post{
+    margin-top: 15px;
+    text-align: center;
+    &-img{
+        float:none;
+        margin:0px;
+    }
+}
+.news-two-post-data{
+    width: 50%;
+    margin:0px;
+}

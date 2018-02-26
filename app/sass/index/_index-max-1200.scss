@@ -1,0 +1,74 @@
+.header-box-shop{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.header-shop{
+    margin:0px;
+}
+.news-one-post{
+    padding:0px;
+    &-img{
+        height:100%;
+        width:100%;
+    }
+    &-title{
+        font-size: 23px;
+    }
+    &-title-link{
+        font-size: 23px;
+    }
+    &-description{
+        margin:0px;
+    }
+}
+.news-two-post{
+    &-img{
+        height:100%;
+        width:100%;
+    }
+    &-title{
+        font-size: 23px;
+    }
+    &-title-link{
+        font-size: 23px;
+    }
+    &-description{
+        margin:0px;
+    }
+}
+.test{
+    width:50%;
+}
+.news .item-sale{
+    padding-left:15px;
+    padding-right:15px;
+}
+.news .item-sale-title{
+    font-size: 36px;
+}
+.news .item-sale-description{
+    padding:0px;
+    font-size: 16px;
+}
+.item-sale-img{
+    width:115px;
+}
+.callback-news-form-email{
+    width:70%;
+    padding-left:5px;
+}
+.callback-news-form-button{
+    width:30%;
+}
+.certificate-boxvisa{
+    margin:0px;
+}
+.certificate-boxsmm{
+    margin:0px;
+}
+.features{
+ margin:40px 80px;
+}

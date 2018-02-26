@@ -1,0 +1,171 @@
+.header-box-shop{
+    display: block;
+    text-align: center;
+    height:auto;
+}
+.header-shop{
+    margin:0px;
+}
+.nav-link{
+    padding: 20px 26px;
+    border:none;
+    &-item{
+        padding-bottom: 10px;
+    }
+    &:last-child{
+        border:none;
+    }
+}
+.nav-items{
+    margin:0px;
+}
+.navbar{
+    width:122px;
+    &-about{
+        width:160px;
+    }
+}
+.shop-items-onecolumn{
+    margin-top:25px;
+}
+.shop-item{
+    width:100%;
+    margin:0 auto;
+    margin-bottom:15px;
+}
+.shop-box-menu{
+    margin:0px;
+    padding:0px;
+}
+.shop-box-item{
+    padding:0px;
+    margin:0 10px;
+    text-align: center;
+}
+.shop-box-link{
+    letter-spacing: 0px;
+}
+.news-one-post-img{
+    width: auto;
+    height: auto;
+    float: left;
+    margin-right: 15px;
+}
+.news-two-post-img{
+    width: auto;
+    height: auto;
+    float: left;
+    margin-right: 15px;
+}
+.features{
+    height:100%;
+    margin:0px;
+}
+.footer-box-nav-collection{
+    display:none;
+}
+.news-img-discont{
+    margin-bottom:15px;
+}
+.footer-nav{
+    padding: 0px;
+    padding-top: 15px;
+}
+.footer-name-nav{
+    float:left;
+}
+.footer-name-info{
+    float:left;
+}
+.footer-box-nav-collection-sm{
+    display:block;
+}
+.test{
+    width: 50%;
+    margin-top: -16px;
+}
+.description-box{
+    width:100%;
+}
+.footer{
+    margin-top:20px;
+}
+.footer-box-item{
+    display:none;
+}
+.certificate-boxvisa{
+    margin-left:10px;
+    display:Block;
+}
+.certificate-boxliqpay{
+    margin:0px;
+}
+.certificate-boxsmm{
+    margin-right:10px;
+    display:block;
+}
+.certificate-smm{
+    display:none;
+}
+.certificate-visa{
+    display:none;
+}
+.certificate-liqpay{
+    display:none;
+}
+.item-sale{
+    margin-top:20px;
+}
+label {
+border-bottom: solid 1px lightgrey;
+margin: 0px;
+}
+.callback-news-form-email{
+    width:60%;
+    padding:0px;
+}
+.callback-news-form-button{
+    width:40%;
+    font-size: 12px;
+    letter-spacing:0px;
+    padding:12px;
+}
+.test{
+    width:50%;
+}
+.news{
+    text-align:center;
+    &-img-discont{
+        width:auto;
+    }
+    &-one-post{
+        &-img{
+            float:none;
+            margin:0px;
+        }
+        &-data{
+            float:none;
+            margin:0px;
+        }
+    }
+    &-two-post{
+        margin-top:15px;
+        &-img{
+            float:none;
+            margin:0px;
+        }
+        &-data{
+            float:none;
+            margin:0px;
+        }
+    }
+}
+.certificate-boxsmm{
+    margin:0 15px;
+}
+.certificate-boxvisa{
+    margin:0 15px;
+}
+.certificate-boxliqpay{
+    margin:0 15px;
+}

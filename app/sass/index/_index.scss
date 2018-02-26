@@ -1,0 +1,782 @@
+.header{
+  &-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+  }
+  &-form{
+    &-search{
+      font-family: "Philosopher";
+      font-size: 16px;
+      width: 75%;
+      border-top: none;
+      border-left: none;
+      border-right:none;
+      &:focus{
+        outline:none;
+        border-bottom: solid 2px $theme-color;
+      }
+      &:hover{
+        border-bottom: solid 2px $theme-color;
+      }
+    }
+  }
+  &-logo{
+    text-align: center;
+  }
+  &-text{
+    font-family: "Philosopher";
+    font-style: italic;
+    font-size: 12px;
+  }
+  &-number{
+    font-size: 18px;
+    font-family: "FuturaDemic";
+  }
+  &-box-shop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+  }
+  &-textshop{
+
+  }
+  &-shop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 120px;
+    &-heart{
+    margin-right: 15px;
+      & img{
+        margin-right: 15px;
+      }
+      &-number{
+        font-family: "FuturaDemic";
+      }
+    }
+    &-basket{
+      border-radius: 30px;
+      text-align: center;
+      font-family: "Philosopher";
+      color: white;
+      padding: 14px;
+      display: block;
+      width: 110px;
+      height: 50px;
+      background: $theme-color;
+      transition: all 300ms;
+      border: solid 1px;
+      &:hover{
+        background:white;
+        color: $theme-color;
+        border: solid 1px $theme-color;
+        text-decoration: none;
+      }
+    }
+  }
+}
+/*HEADER*/
+
+.slider{
+  height: 80vh;
+  &-img{
+    background-image: url(../../img/slider-background.png);
+    width:100%;
+    height: 80vh;
+  }
+}
+
+
+
+/*SHOP TITLE*/
+.shop{
+  &-title{
+    font-family: "Cassandra";
+    font-size: 60px;
+    text-align: center;
+    margin-top: 45px;
+  }
+  &-box{
+    display: flex;
+    justify-content: center;
+  }
+  &-box-item{
+  list-style-type: none;
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-top: 40px;
+  }
+  &-box-link{
+    font-size: 14px;
+    font-family: "FuturaDemic";
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: black;
+    &:hover{
+      color:$theme-color;
+      text-decoration: none;
+      transition: all .1s ease-out .1s;
+    }
+  }
+  &-item{
+    padding:30px 0px;
+    border:solid 1px lightgrey;
+    text-align: center;
+    z-index: 1;
+    margin-left: -1px;
+    margin-top: -1px;
+    &-likeimg{
+      display: none;
+    }
+    &:hover{
+      position: relative;
+      border:solid 1px $theme-color;
+      z-index: 10;
+    }
+    &:hover &-likeimg{
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin-left: 45%;
+      margin-top: -1px;
+    }
+    &-productimg{
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: 100%;
+    }
+    &-name{
+      font-family: "FuturaDemic";
+      font-size: 18px;
+      color: black;
+      &:hover{
+        color:$theme-color;
+        transition: all .1s ease-out .1s;
+      }
+    }
+    &-saleprice{
+      font-family: "Philosopher";
+      text-decoration:line-through;
+      font-size: 16px;
+      margin-right: 15px;
+      color: black;
+    }
+    &-price{
+      font-family: "Philosopher";
+      font-size: 16px;
+      color: black;
+    }
+    &-prices{
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &-items-onecolumn div a{
+    &:hover{
+      text-decoration:none;
+    }
+  }
+}
+.description{
+  margin-top: 30px;
+  &-box{
+    margin-left: 20%;
+    width: 750px;
+    height: 310px;
+    background: white;
+    outline: 5px solid $shadow-color;
+    outline-offset: -15px;
+    box-shadow: 0px 0px 25px $shadow-color;
+    margin:0 auto;
+    z-index: 10;
+    position: relative;
+  }
+  &-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55%;
+  }
+  &-text{
+    width: 75%;
+    margin: 0 auto;
+    font-size: 18px;
+    font-family: "Philosopher";
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+.news{
+  margin-top:50px;
+  &-title{
+    text-align: center;
+    font-family: "Cassandra";
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+  &-img-discont{
+    width: 100%;
+  }
+  &-one-post{
+  padding-bottom: 30px;
+    &-img{
+      width: 100%;
+      height: 193px;
+    }
+    &-data{
+      float: left;
+      margin-right: 50px;
+      font-size: 16px;
+      font-family: "Philosopher";
+      color: lightgrey;
+      &-link{
+        font-size: 16px;
+        font-family: "Philosopher";
+        color: lightgrey;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+    &-counter{
+      font-family: "Philosopher";
+      font-size: 16px;
+      color: lightgrey;
+      &-link{
+        font-family: "Philosopher";
+        font-size: 16px;
+        color: lightgrey;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+    &-title{
+      font-size: 28px;
+      font-family: "FuturaDemic";
+      &-link{
+        font-size: 28px;
+        text-decoration: none;
+        color:$black-color;
+        font-family: "FuturaDemic";
+        &:hover{
+          color:$theme-color;
+          text-decoration: none;
+          transition: all 300ms;
+        }
+      }
+    }
+    &-description{
+      font-family: "Philosopher";
+      font-size: 16px;
+      margin-top: 18px;
+      overflow: hidden;
+      height: 50px;
+      &-link{
+        font-family: "Philosopher";
+        font-size: 16px;
+        margin-top: 18px;
+        overflow: hidden;
+        height: 50px;
+        color: $black-color;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+    &-link{
+      color:black;
+      font-size: 16px;
+      font-family: "FuturaDemic";
+      &:hover{
+        color:$theme-color;
+        transition: all 300ms;
+        text-decoration: none;
+      }
+    }
+  }
+  &-two-post{
+    &-img{
+      width: 100%;
+      height: 192px;
+    }
+    &-data{
+      float: left;
+      margin-right: 50px;
+      font-size: 16px;
+      font-family: "Philosopher";
+      color: lightgrey;
+      &-link{
+        font-size: 16px;
+        font-family: "Philosopher";
+        color: lightgrey;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+    &-counter{
+      font-family: "Philosopher";
+      font-size: 16px;
+      color: lightgrey;
+      &-link{
+        font-family: "Philosopher";
+        font-size: 16px;
+        color: lightgrey;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+    &-title{
+      font-size: 28px;
+      font-family: "FuturaDemic";
+      &-link{
+        font-size: 28px;
+        text-decoration: none;
+        color:$black-color;
+        font-family: "FuturaDemic";
+        &:hover{
+          color:$theme-color;
+          text-decoration: none;
+          transition: all 300ms;
+        }
+      }
+    }
+    &-description{
+      font-family: "Philosopher";
+      font-size: 16px;
+      margin-top: 18px;
+      overflow: hidden;
+      height: 50px;
+      &-link{
+        font-family: "Philosopher";
+        font-size: 16px;
+        margin-top: 18px;
+        overflow: hidden;
+        height: 50px;
+        color: $black-color;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+    &-link{
+      color:black;
+      font-size: 16px;
+      font-family: "FuturaDemic";
+      &:hover{
+        color:$theme-color;
+        transition: all 300ms;
+        text-decoration: none;
+      }
+    }
+  }
+  .item-sale{
+    background:#f7f7f7;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #222222;
+    &-title{
+      font-size: 48px;
+      font-family: "Cassandra";
+      padding-bottom: 15px;
+      &-link{
+        font-family: "Cassandra";
+        color: #222222;
+        &:hover{
+          text-decoration: none;
+          color: $theme-color;
+          transition: all 300ms;
+        }
+      }
+    }
+    &-description{
+      padding-top: 15px;
+      font-family: "Philosopher";
+      padding-left: 10%;
+      padding-right: 10%;
+      font-size: 18px;
+      &-link{
+        font-family: "Philosopher";
+        text-decoration: none;
+        color: #222222;
+        &:hover{
+          color:$theme-color;
+          transition: all 300ms;
+        }
+      }
+    }
+  }
+}
+.callback-news{
+  margin-bottom: 30px;
+  &-title{
+    text-align: center;
+    font-family: "Cassandra";
+    font-size: 36px;
+  }
+  & form{
+    display: table;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    width: 50%;
+    padding:3px;
+  }
+  &-form-email{
+    border: none;
+    width: 75%;
+    padding-left: 15px;
+    font-family: "FuturaDemic";
+    letter-spacing: 1px;
+    &:focus{
+      outline: 0;
+    }
+}
+  &-form-button{
+    width: 25%;
+    padding:15px;
+    border:solid 1px white;
+    background: $theme-color;
+    color:white;
+    transition: all 300ms;
+    font-family: "FuturaDemic";
+    text-transform:uppercase;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    &:focus{
+      outline: 0;
+    }
+    &:hover{
+      background:white;
+      color: $theme-color;
+      border:solid 1px $theme-color;
+      transition: all 300ms;
+    }
+  }
+}
+.features{
+  height: 75px;
+  margin:0 212px;
+  border-top: solid 1px grey;
+  border-bottom: solid 1px grey;
+  margin-bottom: 45px;
+  &-description{
+    margin-left: 15px;
+    font-family: "Philosopher";
+    font-size: 18px;
+  }
+  &-box{
+    text-align: center;
+  }
+  &-box-icon{
+    height: 75px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+.footer{
+  box-shadow: inset 0px 0 21px rgba(#000, .1);
+  background:#fff3ea;
+  height: 300px;
+  padding-top: 40px;
+  &-logo{
+    text-align: center;
+  }
+  &-number{
+    text-align: center;
+    font-family: "FuturaDemic";
+    font-size: 18px;
+    margin-top: 30px;
+  }
+  &-name-nav{
+    font-size: 18px;
+    font-family: "FuturaDemic";
+    text-transform: uppercase;
+    text-align: center;
+    padding-right: 56px;
+  }
+  &-nav{
+    list-style-type: none;
+  }
+  &-item{
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+  &-link{
+    font-family: "Philosopher";
+    color: $black-color;
+    font-size: 16px;
+    &:hover{
+
+      text-decoration: none;
+    }
+  }
+  &-box-nav-collection{
+      margin-top: 35px;
+  }
+  &-name-info{
+    font-size: 18px;
+    font-family: "FuturaDemic";
+    text-transform: uppercase;
+    text-align: center;
+    padding-right: 10px;
+  }
+}
+.certificate{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 55px;
+  background:#f7ceb0;
+  &-boxvisa{
+    margin:0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-boxliqpay{
+    margin:0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-boxsmm{
+    margin:0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-visa{
+    color: #6a6a6a;
+    font-family: "FuturaDemic";
+    font-size: 14px;
+    margin-right: 25px;
+  }
+  &-liqpay{
+    color: #6a6a6a;
+    font-family: "FuturaDemic";
+    font-size: 14px;
+    margin-right: 25px;
+  }
+  &-smm{
+    color: #6a6a6a;
+    font-family: "FuturaDemic";
+    font-size: 14px;
+    margin-right: 25px;
+  }
+  &-linkinstagramm{
+    margin:0 25px;
+  }
+}
+.test{
+  float:left;
+  width:25%;
+  &-test{
+    padding:25px;
+    width:100%;
+    height:270px;
+  }
+}
+.slider-img{
+    background-size:cover;
+}
+
+
+
+
+
+.header-navigation{
+nav {
+border-top:solid 1px lightgrey;
+border-bottom:solid 1px lightgrey;
+}
+.fa-bars{
+  color: black;
+}
+ul {
+  list-style: none;
+  margin: 0 auto;
+  margin-left: 11.5%;
+  padding: 0;
+}
+a {text-decoration: none;}
+.top-menu {position: relative;}
+.top-menu:after, .submenu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.top-menu > li {float: left;}
+.top-menu > li > a {
+  font-family: "FuturaDemic";
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding:0px 30px;
+  border-left: solid 1px lightgrey;
+  border-right: solid 1px lightgrey;
+  margin-left:-1px;
+  padding-top: 10px;
+  height: 70px;
+  line-height: 46px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+  transition: .2s linear;
+}
+.top-menu > li > a:hover {color: $theme-color;cursor:pointer;}
+.top-menu > li > a > img{
+    display: block;
+    margin: 0 auto;
+    margin-top: -10px;
+}
+.dropdown:after {
+  font-family: FontAwesome;
+  margin-left: 4px;
+  vertical-align: top;
+}
+.submenu, .submenu-standart {
+  border-top: 1px solid #e5e5e5;
+  box-shadow: 0 3px 5px 0 rgba(0,0,0,.07);
+  background: white;
+  padding: 25px 0;
+  margin:0px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 5;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate3d(0,30px,0);
+  transition: .5s ease-out;
+  transform-origin: 0% 0%;
+}
+.submenu {width: 100%;}
+.submenu-standart {
+  min-width: 200px;
+  padding: 10px 0;
+}
+.link-standart {position: relative;}
+.top-menu > li:hover .submenu, .top-menu > li:hover .submenu-standart {
+  opacity: 1;
+  visibility: visible;
+  transform: translate3d(0,0,0);
+}
+.submenu > li {
+  float: left;
+  width: calc(100% / 3);
+  padding: 0 18px;
+  border-right: 1px solid #e5e5e5;
+}
+.submenu-standart li {padding: 0 18px;}
+.submenu > li:last-child {border-right: none;}
+.submenu img {
+  display: block;
+  width: 100%;
+}
+.submenu li a, .submenu-standart li a {
+  display: block;
+  padding: 5px 0;
+  color: #666;
+  font-size: 13px;
+  font-family: "FuturaDemic";
+  &:hover{
+    color:$theme-color;
+  }
+}
+.submenu li .link-image {padding: 0;}
+.submenu li a:hover {color: #B03062;}
+.submenu h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+.containerss {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.content {
+  padding: 20px;
+  background: white;
+}
+label {
+  display: none;
+  width: 100%;
+  font-size: 20px;
+  color: white;
+  line-height: 49px;
+  padding-left: 20px;
+}
+input {
+  display: none;
+  position: absolute;
+}
+@media (max-width: 768px){
+  label {display: block;}
+  .top-menu {display: none;}
+  nav #mobile-button:checked + ul {
+    margin-left:0px;
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 10;
+ }
+  .top-menu li {
+    width: 100%;
+    height: auto!important;
+  }
+  .top-menu li a{
+    align-items: center;
+    padding-top:12px;
+    font-family: "FuturaDemic";
+
+  }
+  .top-menu > li {border-bottom: 1px solid #e5e5e5;}
+  .submenu,
+  .submenu-standart {
+    margin-left: 0px;
+    position: relative;
+    display: none;
+    box-shadow: none;
+    padding: 0;
+    background: rgba(0,0,0,.02);
+  }
+  .submenu-standart {padding: 10px 0;}
+  .submenu > li {
+    border-right: none;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 18px;
+  }
+  .submenu h3 {margin: 0 0 10px}
+  .submenu .image-header {margin: 10px 0}
+  .submenu li:last-of-type {border-bottom: none}
+  .top-menu > li:hover .submenu,
+  .top-menu > li:hover .submenu-standart {display: block;}
+}
+
+}

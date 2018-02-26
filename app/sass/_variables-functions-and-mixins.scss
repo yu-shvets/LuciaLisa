@@ -1,0 +1,19 @@
+$main-color: #393d45;
+$red-color: #d4495a;
+$green-color: #33b185;
+$theme-color:#f7ceb0;
+$white-color: #fff;
+$black-color: #000;
+$shadow-color:#f0f0f0;
+
+$i: 10;
+@while $i < 101 {
+    .mb-#{$i} { margin-bottom: $i + px; }
+    $i: $i + 10;
+}
+
+$i: 10;
+@while $i < 101 {
+    .mt-#{$i} { margin-top: $i + px; }
+    $i: $i + 10;
+}
