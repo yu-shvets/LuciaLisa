@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .mb-10 {
   margin-bottom: 10px;
 }
@@ -1160,6 +1159,332 @@
   }
 }
 
+nav {
+  -webkit-box-shadow: 0px 7px 15px lightgrey;
+          box-shadow: 0px 7px 15px lightgrey;
+}
+
+.breadcrumbs-nav {
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px;
+  list-style-type: none;
+}
+
+.breadcrumbs-nav-item {
+  font-family: "Philosopher";
+  margin-right: 15px;
+  font-size: 13px;
+}
+
+.breadcrumbs-nav-link {
+  font-family: "Philosopher";
+  color: black;
+}
+
+.breadcrumbs-nav-link:hover {
+  text-decoration: none;
+  color: #f7ceb0;
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkbox-custom {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.checkbox-custom,
+.label {
+  display: inline-block;
+  vertical-align: middle;
+  color: black;
+  font-family: "Philosopher";
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.checkbox:checked + .checkbox-custom::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  bottom: 4px;
+  left: 2px;
+  background-image: url(../img/checkbox.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+}
+
+.shops {
+  margin-bottom: 30px;
+}
+
+.shops-title {
+  font-family: "Cassandra";
+  font-size: 60px;
+}
+
+.shops-items {
+  list-style-type: none;
+}
+
+.shops-items li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.shops-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: solid 1px lightgrey;
+}
+
+.shops-sortirovka {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
+  color: black;
+  font-family: "Philosopher";
+  font-size: 16px;
+  width: 50%;
+  float: left;
+}
+
+.shops-show {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  font-family: "Philosopher";
+  font-size: 16px;
+  float: right;
+  width: 50%;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.shops-show .open > .dropdown-menu {
+  min-width: 62px;
+}
+
+.shops-show .dropdown-item {
+  padding: 10px 0px;
+}
+
+.shops-items {
+  display: inline-block;
+}
+
+.shops-items .test {
+  width: 33.3%;
+}
+
+.shops-items .test-link {
+  text-decoration: none;
+}
+
+.shops-footer {
+  margin-left: -1px;
+  margin-right: 1px;
+  margin-top: -7px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: solid 1px lightgrey;
+}
+
+.shops-footer-prev {
+  width: 33.3%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.shops-footer-prev-link {
+  padding: 15px 25px;
+  font-family: "Philosopher";
+  font-size: 16px;
+  color: grey;
+}
+
+.shops-footer-prev-link:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.shops-footer-prev-link:hover img {
+  opacity: 1;
+}
+
+.shops-footer-prev-img {
+  opacity: .3;
+}
+
+.shops-footer-counter {
+  width: 33.3%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.shops-footer-counter-items {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.shops-footer-counter-item-active {
+  background: #f7ceb0;
+}
+
+.shops-footer-counter-link-active {
+  display: block;
+  padding: 15px 20px;
+  color: black;
+  font-family: "Philosopher";
+  font-size: 16px;
+}
+
+.shops-footer-counter-link-active:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.shops-footer-counter-link {
+  display: block;
+  padding: 15px 20px;
+  color: black;
+  font-family: "Philosopher";
+  font-size: 16px;
+}
+
+.shops-footer-counter-link:hover {
+  text-decoration: none;
+  color: #f7ceb0;
+}
+
+.shops-footer-next {
+  width: 33.3%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.shops-footer-next-link {
+  margin-right: -1px;
+  padding: 15px 25px;
+  color: black;
+  background: #f7ceb0;
+  font-family: "Philosopher";
+  font-size: 16px;
+  border-left: none;
+}
+
+.shops-footer-next-link:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  font-family: "Philosopher";
+  padding: 10px 20px;
+  color: black;
+  font-size: 16px;
+}
+
+.open > .dropdown-menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 140px;
+  margin-left: 10px;
+  top: -3px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: solid 1px lightgrey;
+  -webkit-border-radius: 0px;
+          border-radius: 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-shadow: 1px 0px 16px rgba(0, 0, 0, 0.14);
+          box-shadow: 1px 0px 16px rgba(0, 0, 0, 0.14);
+}
+
+.open > .dropdown-menu:hover {
+  color: #f7ceb0;
+}
+
+.dropdown-item {
+  color: black;
+  font-size: 16px;
+  padding: 15px 0px;
+  font-family: "Philosopher";
+  content: "";
+}
+
+.dropdown-item:hover {
+  text-decoration: none;
+  color: #f7ceb0;
+}
+
+.shops-footer-prev-2 {
+  display: none;
+}
+
+.shops-footer-next-2 {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .header-box-shop {
     text-align: center;
@@ -1245,6 +1570,14 @@
   }
   .features {
     margin: 40px 80px;
+  }
+  .shops-items {
+    padding: 0px;
+  }
+  .label {
+    padding: 0px;
+    padding-left: 10px;
+    font-size: 14px;
   }
 }
 
@@ -1418,6 +1751,85 @@
   .certificate-boxliqpay {
     margin: 0 15px;
   }
+  .shops-items {
+    padding: 0px;
+  }
+  .shops-items .test {
+    width: 50%;
+  }
+  label {
+    border: none;
+  }
+  .shops-title {
+    font-size: 39px;
+  }
+  .shops-box {
+    display: block;
+    padding-left: 10px;
+    padding-bottom: 15px;
+  }
+  .shops-sortirovka {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 0px;
+  }
+  .shops-show {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: left;
+    -webkit-justify-content: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    float: none;
+  }
+  .shops-footer-prev {
+    display: none;
+  }
+  .shops-footer-counter {
+    width: 100%;
+  }
+  .shops-footer-next {
+    display: none;
+  }
+  .shops-footer-prev-2 {
+    display: block;
+  }
+  .shops-footer-next-2 {
+    display: block;
+  }
+  .shops-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .shops-footer-nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .shops-footer-prev-2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+  }
+  .shops-footer-next-2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1575,6 +1987,85 @@
     width: 50%;
     margin: 0px;
   }
+  .shops-items {
+    padding: 0px;
+  }
+  .shops-items .test {
+    width: 100%;
+  }
+  label {
+    border: none;
+  }
+  .shops-title {
+    font-size: 39px;
+  }
+  .shops-box {
+    display: block;
+    padding-left: 10px;
+    padding-bottom: 15px;
+  }
+  .shops-sortirovka {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 0px;
+  }
+  .shops-show {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: left;
+    -webkit-justify-content: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    float: none;
+  }
+  .shops-footer-prev {
+    display: none;
+  }
+  .shops-footer-counter {
+    width: 100%;
+  }
+  .shops-footer-next {
+    display: none;
+  }
+  .shops-footer-prev-2 {
+    display: block;
+  }
+  .shops-footer-next-2 {
+    display: block;
+  }
+  .shops-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .shops-footer-nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .shops-footer-prev-2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+  }
+  .shops-footer-next-2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+  }
 }
 
 @font-face {
@@ -1601,123 +2092,6 @@
 @font-face {
   font-family: 'AdineKimberg';
   src: url(../fonts/AdineKirnberg/AdineKirnberg.ttf);
-}
-
-nav {
-  -webkit-box-shadow: 0px 7px 15px lightgrey;
-          box-shadow: 0px 7px 15px lightgrey;
-}
-
-.breadcrumbs-nav {
-  margin-top: 32px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0px;
-  list-style-type: none;
-}
-
-.breadcrumbs-nav-item {
-  font-family: "Philosopher";
-  margin-right: 15px;
-  font-size: 13px;
-}
-
-.breadcrumbs-nav-link {
-  font-family: "Philosopher";
-  color: black;
-}
-
-.breadcrumbs-nav-link:hover {
-  text-decoration: none;
-  color: #f7ceb0;
-}
-
-/* ???ܧ??ӧѧ֧????ѧݧ???????ܧҧ???*/
-.checkbox {
-  display: none;
-}
-
-/* ???ѧէѧ֧??ӧߧ֧??ڧ??ӧڧ??էݧ??ߧѧ??ԧ??ܧѧ????ߧ??????ܧҧ???. ???? ?????ѧ??ݧ???????????ӧ????????ާ֧ߧ????ӧѧߧ? ?????ݧ?????ا????????ӧ??ާ֧ߧ??? ?? ?ӧѧ??ާ????ާ????ߧڧ?*/
-.checkbox-custom {
-  position: relative;
-  /* ???ҧ??ѧ??ݧ????٧ѧէѧ֧? ???????ާ??ާ??ݧ??ѧҧ??ݧ??ߧ???????٧? ???٧ڧ????ڧ??ӧѧ? ???֧ӧէ??ݧ֧ާ֧ߧ??ӧߧ??? ?ߧѧ??ԧ??ܧѧ????ߧ??????ܧҧ??? */
-  width: 20px;
-  /* ???ҧ??ѧ??ݧ????٧ѧէѧ֧??????ߧ?*/
-  height: 20px;
-  /* ???ҧ??ѧ??ݧ????٧ѧէѧ֧??ӧ???? */
-  border: 1px solid #ccc;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
-}
-
-/* ???ѧ????ߧ?????ܧҧ??????ݧ֧ۧҧ????ߧ??ڧ??֧??? ?ӧ֧??ڧܧѧݧ? ???????ӧѧ??????ߧ????֧ҧ????? ?? ?ӧ??ާ??֧? ?????? ???????ӧ?vertical-align: middle ?ڧ??էѧߧߧ??????ѧӧڧݧ? ?ߧ????????ӧ?display: inline-block ?????ѧ??ݧ????է??اߧ??ҧ?? */
-.checkbox-custom,
-.label {
-  display: inline-block;
-  vertical-align: middle;
-  color: black;
-  font-family: "Philosopher";
-  font-size: 16px;
-  font-weight: lighter;
-}
-
-/* ?????????ѧݧ???????ܧҧ??????ߧѧ????ާ֧??? ?? ???ԧէ??է??ѧӧݧ????էѧߧߧ?????ڧ٧ߧѧ??????ߧѧ??ާ??ܧѧ????ߧ??????ܧҧ???  */
-.checkbox:checked + .checkbox-custom::before {
-  content: "";
-  /* ?????ѧӧݧ????ߧѧ????֧ӧէ??ݧ֧ާ֧ߧ?*/
-  display: block;
-  /* ???֧ݧѧ֧??֧ԧ??ҧݧ??ߧ?????֧ާ֧ߧ???*/
-  position: absolute;
-  /* ?????ڧ????ڧ??֧??֧ԧ??ѧҧ??ݧ??ߧ???????٧? */
-  /* ???ѧէѧ֧??????????ڧ??? ?ӧ֧??ߧ֧? ???ѧӧ?, ?ߧڧاߧ֧????ݧ֧ӧ? ?ԧ??ߧڧ? */
-  top: 3px;
-  right: 3px;
-  bottom: 4px;
-  left: 2px;
-  background-image: url(../img/checkbox.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  /* ?????ѧӧݧ??????? ?????????֧ҧ????? ?ާ??֧? ?????ѧӧڧ? ???է??ܧѧ??ڧߧܧ????ӧڧէ?"?ԧѧݧ??ܧ?, ?ܧ????ѧ??ҧ??֧????ާӧ??ڧ٧ڧ??ӧѧ?, ???????ܧҧ??????ާ֧???*/
-  -webkit-border-radius: 2px;
-          border-radius: 2px;
-}
-
-.shops-title {
-  font-family: "Cassandra";
-  font-size: 60px;
-}
-
-.shops-items {
-  list-style-type: none;
-}
-
-.shops-items li {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.shops-box {
-  border: solid 1px lightgrey;
-}
-
-.shops-stats-items {
-  padding: 0px;
-  margin: 0px;
-  list-style-type: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.shops-stats-item {
-  width: 50%;
 }
 
 /*# sourceMappingURL=../css/main.css.map */

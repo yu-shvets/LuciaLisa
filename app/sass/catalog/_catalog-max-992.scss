@@ -1,0 +1,57 @@
+.shops-items{
+    padding:0px;
+}
+.shops-items .test{
+    width:50%;
+}
+label{
+    border:none;
+}
+.shops-title{
+    font-size: 39px;
+}
+.shops-box{
+    display: block;
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+.shops-sortirovka{
+    display: flex;
+    width:100%;
+    padding:0px;
+}
+.shops-show{
+    display: flex;
+    width:100%;
+    justify-content: left;
+    float: none;
+}
+.shops-footer-prev{
+    display: none;
+}
+.shops-footer-counter{
+    width: 100%;
+}
+.shops-footer-next{
+    display: none;
+}
+.shops-footer-prev-2{
+    display: block;
+}
+.shops-footer-next-2{
+    display: block;
+}
+.shops-footer{
+    flex-direction: column;
+}
+.shops-footer-nav{
+    display: flex;
+}
+.shops-footer-prev-2{
+    display: flex;
+    width: 50%;
+}
+.shops-footer-next-2{
+    display: flex;
+    width: 50%;
+}
