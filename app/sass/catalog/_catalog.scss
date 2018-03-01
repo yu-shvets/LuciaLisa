@@ -98,7 +98,6 @@ nav {
         }
     }
     &-items{
-        display: inline-block;
         .test{
             width:33.3%;
             &-link{
@@ -109,7 +108,6 @@ nav {
     &-footer{
         margin-left: -1px;
         margin-right: 1px;
-        margin-top:-7px;
         display: flex;
         border:solid 1px lightgrey;
         &-prev{
@@ -123,6 +121,36 @@ nav {
                 &:hover{
                     text-decoration:none;
                     color: black;
+                    & img{
+                        opacity: 1;
+                    }
+                }
+            }
+            &-img{
+                opacity: .3;
+            }
+        }
+        &-next{
+            width:33.3%;
+            display: flex;
+            justify-content: flex-end;
+            &-link{
+                margin-right: -1px;
+                padding: 15px 25px;
+                color:grey;
+                font-family: "Philosopher";
+                font-size: 16px;
+                border-left:none;
+                &-active{
+                    background: $theme-color;
+                    color: black;
+                    & img{
+                        opacity: 1;
+                    }
+                }
+                &:hover{
+                    text-decoration:none;
+                    color:black;
                     & img{
                         opacity: 1;
                     }
@@ -166,24 +194,6 @@ nav {
                 &:hover{
                     text-decoration:none;
                     color: $theme-color;
-                }
-            }
-        }
-        &-next{
-            width:33.3%;
-            display: flex;
-            justify-content: flex-end;
-            &-link{
-                margin-right: -1px;
-                padding: 15px 25px;
-                color:black;
-                background:$theme-color;
-                font-family: "Philosopher";
-                font-size: 16px;
-                border-left:none;
-                &:hover{
-                    text-decoration:none;
-                    color:white;
                 }
             }
         }

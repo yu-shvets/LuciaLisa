@@ -1299,10 +1299,6 @@ nav {
   padding: 10px 0px;
 }
 
-.shops-items {
-  display: inline-block;
-}
-
 .shops-items .test {
   width: 33.3%;
 }
@@ -1314,7 +1310,6 @@ nav {
 .shops-footer {
   margin-left: -1px;
   margin-right: 1px;
-  margin-top: -7px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1347,6 +1342,49 @@ nav {
 }
 
 .shops-footer-prev-img {
+  opacity: .3;
+}
+
+.shops-footer-next {
+  width: 33.3%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.shops-footer-next-link {
+  margin-right: -1px;
+  padding: 15px 25px;
+  color: grey;
+  font-family: "Philosopher";
+  font-size: 16px;
+  border-left: none;
+}
+
+.shops-footer-next-link-active {
+  background: #f7ceb0;
+  color: black;
+}
+
+.shops-footer-next-link-active img {
+  opacity: 1;
+}
+
+.shops-footer-next-link:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.shops-footer-next-link:hover img {
+  opacity: 1;
+}
+
+.shops-footer-next-img {
   opacity: .3;
 }
 
@@ -1403,33 +1441,6 @@ nav {
   color: #f7ceb0;
 }
 
-.shops-footer-next {
-  width: 33.3%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.shops-footer-next-link {
-  margin-right: -1px;
-  padding: 15px 25px;
-  color: black;
-  background: #f7ceb0;
-  font-family: "Philosopher";
-  font-size: 16px;
-  border-left: none;
-}
-
-.shops-footer-next-link:hover {
-  text-decoration: none;
-  color: white;
-}
-
 .btn {
   font-family: "Philosopher";
   padding: 10px 20px;
@@ -1483,6 +1494,17 @@ nav {
 
 .shops-footer-next-2 {
   display: none;
+}
+
+.product-title {
+  font-size: 60px;
+  font-family: "Cassandra";
+}
+
+.product-subtitle {
+  font-size: 16px;
+  font-family: "Philosopher";
+  color: #848484;
 }
 
 @media (max-width: 1200px) {
@@ -2092,6 +2114,19 @@ nav {
 @font-face {
   font-family: 'AdineKimberg';
   src: url(../fonts/AdineKirnberg/AdineKirnberg.ttf);
+}
+
+.checkbox_form {
+  list-style-type: none;
+  margin-left: -15px;
+}
+
+.checkbox_form label {
+  color: black;
+  font-family: "Philosopher", serif;
+  font-size: 16px;
+  font-weight: lighter;
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=../css/main.css.map */

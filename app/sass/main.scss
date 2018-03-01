@@ -9,3 +9,15 @@
 
 @import 'media';
 @import "fonts";
+.checkbox_form {
+  list-style-type: none;
+  margin-left: -15px;
+}
+
+.checkbox_form label {
+  color: black;
+  font-family: "Philosopher", serif;
+  font-size: 16px;
+  font-weight: lighter;
+  margin-bottom: 10px;
+}

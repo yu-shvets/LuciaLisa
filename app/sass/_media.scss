@@ -1,17 +1,21 @@
 @import "index/index";
 @import "catalog/catalog";
+@import "item-product/item-product";
 
 @media (max-width: 1200px) {
     @import "index/index-max-1200";
     @import "catalog/catalog-max-1200";
+    @import "item-product/item-product-max-1200";
 }
 
 @media (max-width: 991px) {
     @import "index/index-max-992";
     @import "catalog/catalog-max-992";
+    @import "item-product/item-product-max-992";
 }
 
 @media (max-width: 767px) {
     @import "index/index-max-767";
     @import "catalog/catalog-max-767";
+    @import "item-product/item-product-max-767";
 }
