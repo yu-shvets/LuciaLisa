@@ -2096,6 +2096,7 @@ nav {
     text-align: center;
   }
   .news-one-post-title-link {
+    display: inline-block;
     font-size: 25px;
   }
   .news-two-post-title-link {
@@ -2213,12 +2214,12 @@ nav {
     margin: 0px;
   }
   .news-one-post-counter {
-    width: 50%;
+    width: 100%;
     float: left;
   }
   .news-one-post-data {
     margin-right: 0px;
-    width: 50%;
+    width: 100%;
   }
   .news-two-post {
     margin-top: 15px;
@@ -2229,8 +2230,7 @@ nav {
     margin: 0px;
   }
   .news-two-post-data {
-    width: 50%;
-    margin: 0px;
+    width: 100%;
   }
   .bg-wrapper {
     margin-top: 20px;
