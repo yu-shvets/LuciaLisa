@@ -1159,6 +1159,146 @@
   }
 }
 
+.bg-wrapper {
+  margin-top: -110px;
+}
+
+.sm-wrapper {
+  font-size: 0;
+}
+
+.lions {
+  width: 50%;
+  height: 600px;
+  display: inline-block;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+.lions-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: skewY(4deg);
+      -ms-transform: skewY(4deg);
+          transform: skewY(4deg);
+  padding-left: 50%;
+}
+
+.lions-title {
+  font-family: "Philosopher";
+  font-size: 24px;
+  color: black;
+}
+
+.lions-title:hover {
+  color: black;
+}
+
+.lions-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-image: url(../../img/lions.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+  -webkit-transition: ease 500ms;
+  transition: ease 500ms;
+}
+
+.lions-img:hover {
+  text-decoration: none;
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+}
+
+.revived {
+  width: 50%;
+  height: 600px;
+  display: inline-block;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+.revived-title {
+  font-family: "Philosopher";
+  font-size: 24px;
+  color: black;
+}
+
+.revived-title:hover {
+  color: black;
+}
+
+.revived-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  padding-right: 50%;
+  -webkit-transform: skewY(4deg);
+      -ms-transform: skewY(4deg);
+          transform: skewY(4deg);
+  padding-top: 13%;
+}
+
+.revived-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-image: url(../../img/revived.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+  -webkit-transition: ease 500ms;
+  transition: ease 500ms;
+}
+
+.revived-img:hover {
+  text-decoration: none;
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+}
+
+.bg-wrapper {
+  overflow: hidden;
+  -webkit-transform: skewY(-4deg);
+      -ms-transform: skewY(-4deg);
+          transform: skewY(-4deg);
+}
+
 nav {
   -webkit-box-shadow: 0px 7px 15px lightgrey;
           box-shadow: 0px 7px 15px lightgrey;
@@ -1496,6 +1636,50 @@ nav {
   display: none;
 }
 
+.shops-footer-prev-link {
+  padding: 15px 25px;
+  font-family: "Philosopher";
+  font-size: 16px;
+  color: grey;
+}
+
+.shops-footer-prev-link-active {
+  padding: 15px 25px;
+  font-family: "Philosopher";
+  font-size: 16px;
+  color: black;
+  background: #f7ceb0;
+}
+
+.shops-footer-prev-link-active:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.shops-footer-next-link {
+  margin-right: -1px;
+  padding: 15px 25px;
+  font-family: "Philosopher";
+  font-size: 16px;
+  border-left: none;
+  color: grey;
+}
+
+.shops-footer-next-link-active {
+  margin-right: -1px;
+  padding: 15px 25px;
+  color: black;
+  background: #f7ceb0;
+  font-family: "Philosopher";
+  font-size: 16px;
+  border-left: none;
+}
+
+.shops-footer-next-link-active:hover {
+  text-decoration: none;
+  color: white;
+}
+
 .product-title {
   font-size: 60px;
   font-family: "Cassandra";
@@ -1592,6 +1776,24 @@ nav {
   }
   .features {
     margin: 40px 80px;
+  }
+  .lions {
+    width: 50%;
+    height: 450px;
+  }
+  .lions-info {
+    padding: 0px;
+  }
+  .lions-info img {
+    -webkit-filter: contrast(2);
+            filter: contrast(2);
+  }
+  .revived {
+    width: 50%;
+    height: 450px;
+  }
+  .revived-info {
+    padding: 0px;
   }
   .shops-items {
     padding: 0px;
@@ -1772,6 +1974,27 @@ nav {
   }
   .certificate-boxliqpay {
     margin: 0 15px;
+  }
+  .bg-wrapper {
+    margin-top: 50px;
+  }
+  .lions {
+    width: 100%;
+    height: 450px;
+  }
+  .lions-info {
+    padding: 0px;
+  }
+  .lions-info img {
+    -webkit-filter: contrast(2);
+            filter: contrast(2);
+  }
+  .revived {
+    width: 100%;
+    height: 450px;
+  }
+  .revived-info {
+    padding: 0px;
   }
   .shops-items {
     padding: 0px;
@@ -2008,6 +2231,28 @@ nav {
   .news-two-post-data {
     width: 50%;
     margin: 0px;
+  }
+  .bg-wrapper {
+    margin-top: 20px;
+  }
+  .lions {
+    width: 100%;
+    height: 215px;
+  }
+  .lions-info {
+    padding: 0px;
+  }
+  .lions-info img {
+    width: 85%;
+    -webkit-filter: contrast(2);
+            filter: contrast(2);
+  }
+  .revived {
+    width: 100%;
+    height: 215px;
+  }
+  .revived-info {
+    padding: 0px;
   }
   .shops-items {
     padding: 0px;

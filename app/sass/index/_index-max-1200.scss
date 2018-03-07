@@ -72,3 +72,20 @@
 .features{
  margin:40px 80px;
 }
+.lions{
+    width:50%;
+    height:450px;
+    &-info{
+        padding:0px;
+        & img{
+            filter:contrast(2);
+        }
+    }
+}
+.revived{
+    width:50%;
+    height:450px;
+    &-info{
+        padding:0px;
+    }
+}

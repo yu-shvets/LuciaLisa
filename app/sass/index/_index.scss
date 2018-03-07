@@ -778,5 +778,95 @@ input {
   .top-menu > li:hover .submenu,
   .top-menu > li:hover .submenu-standart {display: block;}
 }
+}
 
+
+
+
+.bg-wrapper{
+    margin-top: -110px;
+}
+.sm-wrapper{
+    font-size: 0;
+}
+.lions{
+    width: 50%;
+    height: 600px;
+    display: inline-block;
+    font-size: 16px;
+    overflow:   hidden;
+    &-info{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: center;
+        flex-direction: column;
+        transform: skewY(4deg);
+        padding-left: 50%;
+    }
+    &-title{
+        font-family: "Philosopher";
+        font-size: 24px;
+        color: black;
+        &:hover{
+            color: black;
+        }
+    }
+}
+.lions-img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-image: url(../../img/lions.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.7);
+    transition: ease 500ms;
+    &:hover{
+        text-decoration:none;
+        filter:brightness(1);
+    }
+}
+.revived{
+    width: 50%;
+    height: 600px;
+    display: inline-block;
+    font-size: 16px;
+    overflow:   hidden;
+    &-title{
+        font-family: "Philosopher";
+        font-size: 24px;
+        color: black;
+        &:hover{
+            color: black;
+        }
+    }
+    &-info{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        padding-right: 50%;
+        transform: skewY(4deg);
+        padding-top: 13%;
+    }
+}
+.revived-img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-image: url(../../img/revived.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.7);
+    transition: ease 500ms;
+    &:hover{
+        text-decoration:none;
+        filter:brightness(1);
+    }
+}
+.bg-wrapper{
+        overflow: hidden;
+    transform: skewY(-4deg);
 }

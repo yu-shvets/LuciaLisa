@@ -237,3 +237,50 @@ nav {
 .shops-footer-next-2{
     display:none;
 }
+
+
+
+
+.shops-footer-prev-link {
+  padding: 15px 25px;
+  font-family: "Philosopher";
+  font-size: 16px;
+  color: grey;
+}
+
+.shops-footer-prev-link-active {
+  padding: 15px 25px;
+  font-family: "Philosopher";
+  font-size: 16px;
+  color: black;
+  background: #f7ceb0;
+}
+
+.shops-footer-prev-link-active:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.shops-footer-next-link {
+  margin-right: -1px;
+  padding: 15px 25px;
+  font-family: "Philosopher";
+  font-size: 16px;
+  border-left: none;
+  color: grey;
+}
+
+.shops-footer-next-link-active {
+  margin-right: -1px;
+  padding: 15px 25px;
+  color: black;
+  background: #f7ceb0;
+  font-family: "Philosopher";
+  font-size: 16px;
+  border-left: none;
+}
+
+.shops-footer-next-link-active:hover {
+  text-decoration: none;
+  color: white;
+}

@@ -130,3 +130,24 @@ margin-bottom: 5px;
     width: 50%;
     margin:0px;
 }
+.bg-wrapper{
+    margin-top:20px;
+}
+.lions{
+    width:100%;
+    height:215px;
+    &-info{
+        padding:0px;
+        & img{
+            width:85%;
+            filter:contrast(2);
+        }
+    }
+}
+.revived{
+    width:100%;
+    height:215px;
+    &-info{
+        padding:0px;
+    }
+}
