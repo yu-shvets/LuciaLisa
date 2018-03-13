@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <link rel="stylesheet" href="libs/photobox/jquery.photobox.js">
+    <link rel="stylesheet" href="libs/photobox/photobox.css">
     <link type="text/css" rel="stylesheet" href="libs/lightgallery/dist/css/lightgallery.css" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -81,21 +83,237 @@
             </div>
             <div class="col-md-9">
 
-                <div class="gallery" id="gallery1">
-                    <div class="sp__wrap"><a href="img/item-1.png"><img class="sp__img" src="img/item-1.png"></a></div>
-                    <!--small images-->
-                    <div class="owl-carousel">
-                      <div class="item sp__carousel"><a href="img/item-1.png"><img class="sp__img" src="img/item-1.png"></a></div>
-                      <div class="item sp__carousel"><a href="img/item-1.png"><img class="sp__img" src="img/item-1.png"></a></div>
-                      <div class="item sp__carousel"><a href="img/item-1.png"><img class="sp__img" src="img/item-1.png"></a></div>
-                      <div class="item sp__carousel"><a href="img/item-1.png"><img class="sp__img" src="img/item-1.png"></a></div>
-                      <div class="item sp__carousel"><a href="img/item-1.png"><img class="sp__img" src="img/item-1.png"></a></div>
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="row">
+                          <div class="col-md-6 col-md-offset-5">
+                            <div class="product-img">
+                                <a data-fancybox="gallery" href="img/chair.png">
+                                  <img class="img-fluid-full" src="img/chair.png" alt="">
+                                </a>
+                            </div>
+                          </div>
                     </div>
-              </div>
+                    <div class="row products-img">
+                          <div class="col-md-3 col-md-offset-2">
+                            <div>
+                                <a data-fancybox="gallery" href="img/item-2.png">
+                                  <img class="img-responsive" src="img/item-2.png" alt="">
+                                </a>
+                            </div>
+                          </div>
+                      <div class="col-md-3">
+                        <div>
+                            <a data-fancybox="gallery" href="img/item-3.png">
+                              <img class="img-responsive" src="img/item-3.png" alt="">
+                            </a>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div>
+                            <a data-fancybox="gallery" href="img/item-4.png">
+                              <img class="img-responsive" src="img/item-4.png" alt="">
+                            </a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box-info-product">
+                        <div class="sm-info-product">Кольцо «Изящная» из красного золота 585 пробы с фианитами</div>
+                        <div class="pay-product">7,500<span class="pay-currency">грн</span></div>
+                        <form action="#">
+                            <input class="button-for-buy-product" type="button" value="Купить">
+                        </form>
+                        <div class="info-product">Материал: <span class="info-text-product">Золото 585</span></div>
+                        <div class="info-product">Цвет металла: <span class="info-text-product">Белый</span></div>
+                        <div class="info-product">Коллекция: <span class="info-text-product">Merezhyvo</span></div>
+                        <div class="info-product">Средний вес: <span class="info-text-product">2.54</span></div>
+                        <div class="share-social-links">Поделиться:</div>
+                        <div class="box-social-links">
+                            <a class="social-links" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="social-links" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="social-links" href="#"><i class="fab fa-pinterest-p"></i></a>
+                            <a class="social-links" href="#"><i class="fab fa-telegram-plane"></i></a>
+                        </div>
+                        <div class="box-discounts">
+                            <div class="name-discounts">Действуют скидки</div>
+                            <div class="discount">-10% при покупке одного изделия</div>
+                            <div class="discount">-15% при покупке двух изделий</div>
+                            <div class="discount">-20% при покупке пяти изделий</div>
+                            <div class="discount">-30% при индивидуальном заказе</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
             </div>
             <div class="col-md-3">
-
+                <div class="features-delivery">
+                    <div class="features-boximg">
+                        <p><img class="features-img" src="img/delivery.png" alt=""></p>
+                    </div>
+                    <div class="features-title">
+                        <p class="features-title">Доставка</p>
+                    </div>
+                    <div class="features-pg">
+                        Новая Почта (отделение)
+                        <p class="features-pg-info"><span class="features-pg-info-word">Бесплатно.</span> Вы оплачиваете только стоимость товара.</p>
+                    </div>
+                    <div class="features-pg">
+                        Курьером (по Украине)
+                        <p class="features-pg-info">Более 1000 грн.: Бесплатно</p>
+                    </div>
+                    <div class="features-pg">
+                        Самовывоз из магазина
+                        <p class="features-pg-info">г. Киев, Дримтаун</p>
+                    </div>
+                </div>
+                <div class="features-pay">
+                    <div class="features-boximg">
+                        <p><img src="img/features-pay.png" alt=""></p>
+                    </div>
+                    <div class="features-title">
+                        <p class="features-title">Оплата</p>
+                    </div>
+                    <div>
+                        <p class="features-pg">Наличными при получении</p>
+                        <p class="features-pg">Оплата платежной картой Visa/Mastercard</p>
+                    </div>
+                </div>
+                <div class="features-exchange">
+                    <div class="features-title">
+                        <p><img src="img/features-exchange.png" alt=""></p>
+                    </div>
+                    <div class="features-title">
+                        <p class="features-title">Обмен 14 дней</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about-product">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="box-character">
+                    <h4 class="title-ch-product">Характеристики</h2>
+                    <div class="character-product">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="colum-one">
+                                    <p class="column-pg"><span class="column-pg-t">Для кого:</span> женщине</p>
+                                    <p class="column-pg"><span class="column-pg-t">Вид металла:</span> золото</p>
+                                    <p class="column-pg"><span class="column-pg-t">Цвет металла:</span> красный</p>
+                                    <p class="column-pg"><span class="column-pg-t">Технология:</span> родирование </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="column-two">
+                                    <p class="column-pg"><span class="column-pg-t">Тематика :</span> день рождения, юбилей,8 марта, Новый год</p>
+                                    <p class="column-pg"><span class="column-pg-t">Вид:</span> бесконечность</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="txt-character">
+                        <p class="txt-p-character">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько
+                            абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору
+                            отточить навык публичных выступлений в домашних условиях. При создании генератора мы
+                            использовали небезизвестный универсальный код речей. Текст генерируется абзацами
+                            случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более    привлекательным и живым для визуально-слухового восприятия.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="wrapper-reviwes">
+                    <h4 class="title-rw-product">Отзывы</h2>
+                    <div class="box-txt-reviwes">
+                        <p class="txt-reviwes">
+                            Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+                            несколькоабзацев более менее осмысленного текста рыбы на русском языке,
+                            а начинающему оратору отточить навык публичных выступлений в домашних
+                            условиях. При создании генератора мыиспользовали небезизвестный
+                            универсальный код речей. Текст генерируется абзацами
+                            случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более    привлекательным и живым для визуально-слухового восприятия.
+                        </p>
+                        <p class="name-rw">Николай <span class="data-rw">11.12.13</span></p>
+                    </div>
+                </div>
+                <div class="add-reviwes">
+                    <h2 class="add-reviwes-title">Оставьте отзыв</h4>
+                    <form class="add-reviwes-form" action="#">
+                        <input class="add-reviwes-txt-product" type="text" placeholder="Что вы думаете о товаре">
+                        <div class="add-reviwes-box-name-email">
+                            <input class="add-reviwes-txt-name" type="text" placeholder="Ваше имя">
+                            <input class="add-reviwes-txt-email" type="email" placeholder="Ваш e-mail">
+                        </div>
+                        <input class="add-reviwes-send" type="button" value="Оставить отзыв">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="related-products">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="related-products-title">Похожие товары</h2>
+            </div>
+            <div class="col-md-12">
+                <div class="shop-items-onecolumn">
+                    <div class="test">
+                            <a href="#">
+                                <div class="shop-item">
+                                    <img class="shop-item-likeimg" src="img/icon-like-item.png" alt="">
+                                    <div class="test-test"><img class="shop-item-productimg" src="img/item-1.png" alt=""></div>
+                                    <div class="shop-item-name">Corselet / Грация</div>
+                                    <div class="shop-item-prices">
+                                        <div class="shop-item-saleprice">5,000 грн</div><div class="shop-item-price">4,500 грн</div>
+                                    </div>
+                                </div>
+                            </a>
+                    </div>
+                    <div class="test">
+                        <a href="#">
+                            <div class="shop-item">
+                                <img class="shop-item-likeimg" src="img/icon-like-item.png" alt="">
+                                <div class="test-test"><img class="shop-item-productimg" src="img/item-2.png" alt=""></div>
+                                <div class="shop-item-name">Elegant / Изящная</div>
+                                <div class="shop-item-prices">
+                                    <div class="shop-item-saleprice">5,000 грн</div><div class="shop-item-price">4,500 грн</div>
+                                </div>
+                             </div>
+                        </a>
+                    </div>
+                    <div class="test">
+                        <a href="#">
+                            <div class="shop-item">
+                                <img class="shop-item-likeimg" src="img/icon-like-item.png" alt="">
+                                <div class="test-test"><img class="shop-item-productimg" src="img/item-3.png" alt=""></div>
+                                <div class="shop-item-name">Gorgeous / Великолепная</div>
+                                <div class="shop-item-prices">
+                                    <div class="shop-item-saleprice">5,000 грн</div><div class="shop-item-price">4,500 грн</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="test">
+                        <a href="#">
+                            <div class="shop-item">
+                                <img class="shop-item-likeimg" src="img/icon-like-item.png" alt="">
+                                <div class="test-test"><img class="shop-item-productimg" src="img/item-4.png" alt=""></div>
+                                <div class="shop-item-name">Pious / Благочестивая</div>
+                                <div class="shop-item-prices">
+                                    <div class="shop-item-saleprice">5,000 грн</div><div class="shop-item-price">4,500 грн</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -178,5 +396,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
-
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 </html>

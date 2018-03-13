@@ -1,3 +1,6 @@
+p {
+    margin:0 0 15px;
+}
 .product{
     &-title{
         font-size: 60px;
@@ -9,6 +12,280 @@
         color:#848484;
     }
 }
-.lightgallery{
+.product-img{
+    text-align: center;
+    padding: 60px;
+    padding-right: 0px;
+}
+.img-fluid-full{
+    max-width:93%;
+}
+.products-img{
+    display: flex;
+    align-items: center;
+}
+.sm-info-product{
+    font-family: "Philosopher";
+    font-size: 16px;
+}
+.pay-product{
+    margin-top: 35px;
+    font-family: "Philosopher";
+    font-size: 60px;
+}
+.pay-currency{
+    margin-left: 10px;
+    font-family: "Philosopher";
+    font-size: 30px;
+}
+.button-for-buy-product{
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: white;
+    font-family: "FuturaDemic";
+    text-transform: uppercase;
+    letter-spacing: 2.2px;
+    width: 180px;
+    height: 55px;
+    border:solid $theme-color;
+    background:$theme-color;
+    transition: all 300ms;
+    &:focus{
+        outline:0;
+    }
+    &:hover{
+        background: white;
+        color:$theme-color;
+        border:solid 1px $theme-color;
+    }
+}
+.info-product{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: "Philosopher";
+    font-weight: bold;
+    font-size: 16px;
+}
+.info-text-product{
+    font-family: "Philosopher";
+    font-weight: lighter;
+}
+.box-social-links{
+    display: flex;
+    align-items: center;
+    height:45px;
+}
+.social-links{
+    margin-left:5px;
+    margin-right: 5px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    text-align: center;
+    border-radius: 50%;
+    border:lightgrey solid 1px;
+    font-size: 18px;
+    color: black;
+    transition: all 300ms;
+    &:hover{
+        border:$theme-color solid 1px;
+        color:$theme-color;
+        transform: rotate(360deg);
+    }
+}
+.share-social-links{
+    margin-top: 40px;
+    font-size: 16px;
+    font-family: "FuturaDemic";
+}
+.box-discounts{
+    margin-top:65px;
+    text-align: center;
+    font-family: "Philosopher";
+}
+.name-discounts{
+    font-family: "FuturaDemic";
+    font-size: 18px;
+    font-weight: bold;
+}
+.discount{
+    margin-top: 20px;
+    margin-bottom:15px;
+    font-size: 16px;
+    font-family: "Philosopher";
+    text-align: left;
+}
 
+.features-boximg{
+    text-align: center;
+}
+.features-title{
+    font-family: "Philosopher";
+    font-size: 18px;
+    text-align: center;
+}
+.features-pg{
+    font-family: "FuturaDemic";
+    font-size: 16px;
+    padding-left: 80px;
+    &-info{
+        font-family: "Philosopher";
+    }
+}
+.features-pg-info-word{
+    font-family: "Philosopher";
+    font-size: 16px;
+    color: $theme-color;
+}
+.features-pay{
+    margin-top: 50px;
+}
+.features-exchange{
+    margin-top:50px;
+}
+.title-ch-product{
+    font-family: "FuturaDemic";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.character-product{
+    padding: 25px 40px;
+    padding-bottom: 15px;
+    border-top:solid 1px lightgrey;
+    border-bottom:solid 1px lightgrey;
+}
+.column-pg{
+    font-family:"Philosopher";
+    font-size: 16px;
+    &-t{
+        font-family: "FuturaDemic";
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+.txt-p-character{
+    font-family:"Philosopher";
+    font-size: 16px;
+    margin:0px;
+    padding: 25px;
+}
+.title-rw-product{
+    font-family: "FuturaDemic";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.txt-reviwes{
+    font-family:"Philosopher";
+    font-size: 16px;
+}
+.name-rw{
+    font-family: "FuturaDemic";
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.data-rw{
+    margin-left:15px;
+    font-family: "FuturaDemic";
+}
+.wrapper-reviwes{
+    border-bottom: solid 1px lightgrey;
+}
+.add-reviwes{
+    text-align: center;
+    &-title{
+        font-family: "FuturaDemic";
+    }
+    &-form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &-box-name-email{
+        display: flex;
+        width: 100%;
+        margin:30px 0px;
+    }
+    &-txt-product{
+        margin-top:10px;
+        width: 100%;
+        height: 160px;
+        border:solid 1px lightgrey;
+        color: grey;
+        padding: 15px;
+        padding-bottom: 15%;
+        font-family: "Philosopher";
+        color: lightgrey;
+        font-size: 16px;
+        &:focus{
+            outline:0;
+            border:solid 1px $theme-color;
+            color: black;
+        }
+    }
+    &-txt-name{
+        width: 47%;
+        margin-right:3%;
+        height: 60px;
+        border:solid 1px lightgrey;
+        padding:15px;
+        font-family: "Philosopher";
+        color: lightgrey;
+        font-size: 16px;
+        &:focus{
+            outline:0;
+            border:solid 1px $theme-color;
+            color: black;
+        }
+    }
+    &-txt-email{
+        margin-left:3%;
+        width: 47%;
+        height: 60px;
+        border:solid 1px lightgrey;
+        padding:15px;
+        font-family: "Philosopher";
+        color: lightgrey;
+        font-size: 16px;
+        &:focus{
+            outline:0;
+            border:solid 1px $theme-color;
+            color: black;
+        }
+    }
+    &-send{
+        width: 30%;
+        height: 60px;
+        background: $theme-color;
+        border:solid 1px $theme-color;
+        text-transform: uppercase;
+        color: white;
+        font-family: "FuturaDemic";
+        letter-spacing: 2px;
+        transition: all 300ms;
+        &:focus{
+            outline:0;
+        }
+        &:hover{
+            background: white;
+            color: $theme-color;
+        }
+    }
+}
+.related-products{
+    margin:30px 0px;
+    &-title{
+        font-size: 60px;
+        font-family: "Cassandra";
+        text-align: center;
+        margin-bottom:30px;
+    }
 }
