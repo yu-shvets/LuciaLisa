@@ -1,69 +1,255 @@
 {% extends 'index.html' %}
 {% load widget_tweaks %}
+{% load static from staticfiles %}
 
 {% block content %}
 
-    {% if messages %}
 
-        <ul class="messages">
-        {% for message in messages %}
-        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
-        {% endfor %}
-        </ul>
+    <section class="breadcrumbs">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="breadcrumbs-nav">
+                        <li class="breadcrumbs-nav-item"><a class="breadcrumbs-nav-link"
+                                                            href="{% url 'home' %}">Главная</a></li>
+                        <li class="breadcrumbs-nav-item">/</li>
+                        <li class="breadcrumbs-nav-item"><a class="breadcrumbs-nav-link" href="{% url 'catalogue' %}">Каталог
+                            изделий</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    {% endif %}
+    <section class="product">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="product-title">{{ item.title }}</h1>
+                </div>
+                <div class="col-md-9">
 
-    <img src="{{ item.title_image.url }}" >
-        <p>{{ item.title }}</p>
-
-        <p>Price: <span id="price"> {{ item.get_first_specs.price }}</span></p>
-
-        {% if item.specs_set.all|length > 1%}
-
-            <form method="post" action="{% url 'update_size' item.pk %}">
-              {% csrf_token %}
-
-            Size: {% render_field form.size %}
-
-
-            </form>
-
-        {% else %}
-
-
-        <p>Size: {{ item.get_first_specs.size }}</p>
-
-        {% endif %}
-
-
-    <form style="margin-top: 10px" action="{% url 'add' %}" method="POST">
-        {% csrf_token %}
-        <input type="hidden" name="size_id" id="size_id" value="{{ item.get_first_specs.id }}">
-        <button class="btn btn-default">Add to cart</button>
-    </form>
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-5">
+                                    <div class="product-img">
+                                        <a data-fancybox="gallery" href="{{ item.title_image.url }}">
+                                            <img class="img-fluid-full" src="{{ item.title_image.url }}" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
 
 
-    <div style="margin-top: 50px">
-    <p>Feedbacks</p>
-    <p id="feedback"></p>
-    {% for feedback in item.feedback_set.all %}
-        <p>
-            {{ feedback.feedback }}<br>
-      {{ feedback.name }} {{ feedback.created|date:'d-m-Y' }}
-        </p>
-    {% endfor %}
-    </div>
+                            <div class="row products-img">
+                                <div class="col-md-6 col-md-offset-5 col-xs-12 col-sm-12">
+                                    <div class="owl-carousel slide-two">
 
-    <div style="margin-top: 20px">
-    <form id="feedback_form" method="post" action="{% url 'feedback' item.pk %}">
-              {% csrf_token %}
+                                        <div>
+                                            <a data-fancybox="gallery" href="{{ item.title_image.url }}">
+                                                <img class="img-fluid-full" src="{{ item.title_image.url }}" alt="">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a data-fancybox="gallery" href="{{ item.title_image.url }}">
+                                                <img class="img-fluid-full" src="{{ item.title_image.url }}" alt="">
+                                            </a>
+                                        </div>
 
-            <p>{{ feedback_form.feedback }}</p>
-            <p>{{ feedback_form.name }} {{ feedback_form.email }}</p>
+                                    </div>
+                                </div>
+                            </div>
 
-          <input type="submit" value="Leave feedback">
-          </form>
-    </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="box-info-product">
+                                <div class="sm-info-product">Кольцо «Изящная» из красного золота 585 пробы с фианитами</div>
+                                <div class="pay-product">{{ item.get_first_specs.price }}<span
+                                        class="pay-currency">грн</span></div>
+                                <form action="#">
+                                    <input class="button-for-buy-product" type="button" value="Купить">
+                                </form>
+                                <div class="info-product">Материал: <span class="info-text-product">Золото 585</span>
+                                </div>
+                                <div class="info-product">Цвет металла: <span class="info-text-product">Белый</span>
+                                </div>
+                                <div class="info-product">Коллекция: <span class="info-text-product">Merezhyvo</span>
+                                </div>
+                                <div class="info-product">Средний вес: <span class="info-text-product">2.54</span></div>
+
+
+                                <div class="box-discounts">
+                                    <div class="name-discounts">Действуют скидки</div>
+                                    <div class="discount">-10% при покупке одного изделия</div>
+                                    <div class="discount">-15% при покупке двух изделий</div>
+                                    <div class="discount">-20% при покупке пяти изделий</div>
+                                    <div class="discount">-30% при индивидуальном заказе</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-md-3">
+                    <div class="features-delivery">
+                        <div class="features-boximg">
+                            <p><img class="features-img" src="{% static "products/img/delivery.png" %}" alt=""></p>
+                        </div>
+                        <div class="features-title">
+                            <p class="features-title">Доставка</p>
+                        </div>
+                        <div class="features-pg">
+                            Новая Почта (отделение)
+                            <p class="features-pg-info"><span class="features-pg-info-word">Бесплатно.</span> Вы
+                                оплачиваете только стоимость товара.</p>
+                        </div>
+                        <div class="features-pg">
+                            Курьером (по Украине)
+                            <p class="features-pg-info">Более 1000 грн.: Бесплатно</p>
+                        </div>
+                        <div class="features-pg">
+                            Самовывоз из магазина
+                            <p class="features-pg-info">г. Киев, Дримтаун</p>
+                        </div>
+                    </div>
+                    <div class="features-pay">
+                        <div class="features-boximg">
+                            <p><img src="{% static "products/img/features-pay.png" %}" alt=""></p>
+                        </div>
+                        <div class="features-title">
+                            <p class="features-title">Оплата</p>
+                        </div>
+                        <div>
+                            <p class="features-pg">Наличными при получении</p>
+                            <p class="features-pg">Оплата платежной картой Visa/Mastercard</p>
+                        </div>
+                    </div>
+                    <div class="features-exchange">
+                        <div class="features-title">
+                            <p><img src="{% static "products/img/features-exchange.png" %}" alt=""></p>
+                        </div>
+                        <div class="features-title">
+                            <p class="features-title">Обмен 14 дней</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-product">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="box-character">
+                        <h2 class="title-ch-product">Характеристики</h2>
+                        <div class="character-product">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="colum-one">
+                                        <p class="column-pg"><span class="column-pg-t">Для кого:</span> женщине</p>
+                                        <p class="column-pg"><span class="column-pg-t">Вид металла:</span> золото</p>
+                                        <p class="column-pg"><span class="column-pg-t">Цвет металла:</span> красный</p>
+                                        <p class="column-pg"><span class="column-pg-t">Технология:</span> родирование
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="column-two">
+                                        <p class="column-pg"><span class="column-pg-t">Тематика :</span> день рождения,
+                                            юбилей,8 марта, Новый год</p>
+                                        <p class="column-pg"><span class="column-pg-t">Вид:</span> бесконечность</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="txt-character">
+                            <p class="txt-p-character">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                                сгенерировать несколько
+                                абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору
+                                отточить навык публичных выступлений в домашних условиях. При создании генератора мы
+                                использовали небезизвестный универсальный код речей. Текст генерируется абзацами
+                                случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст
+                                более привлекательным и живым для визуально-слухового восприятия.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="wrapper-reviwes">
+                        <h2 class="title-rw-product">Отзывы</h2>
+                        <div class="box-txt-reviwes">
+                            {% for feedback in item.feedback_set.all %}
+                                <p class="txt-reviwes">
+                                    {{ feedback.feedback }}
+                                </p>
+                                <p class="name-rw">{{ feedback.name }}<span
+                                        class="data-rw">{{ feedback.created|date:'d-m-Y' }}</span></p>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="add-reviwes">
+                        <h2 class="add-reviwes-title">Оставьте отзыв</h2>
+
+                        <form class="add-reviwes-form" id="feedback_form" method="post"
+                              action="{% url 'feedback' item.pk %}">
+                            {% csrf_token %}
+                            {% render_field feedback_form.feedback class="add-reviwes-txt-product" placeholder="Что вы думаете о товаре" %}
+                            <div class="add-reviwes-box-name-email">
+                                {% render_field feedback_form.name class="add-reviwes-txt-name" placeholder="Ваше имя" %}
+                                {% render_field feedback_form.email class="add-reviwes-txt-email" placeholder="Ваш e-mail" %}
+                            </div>
+                            <input class="add-reviwes-send" type="submit" value="Оставить отзыв">
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="related-products">
+        <div class="container-fluid">
+            {% if item.recommended_items.all %}
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="related-products-title">Похожие товары</h2>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="shop-items-onecolumn">
+
+                            {% for item in item.recommended_items.all %}
+
+                                <div class="test">
+                                    <a href="#">
+                                        <div class="shop-item">
+                                            <img class="shop-item-likeimg" src="{{ item.title_image.url }}" alt="">
+                                            <div class="test-test"><img class="shop-item-productimg"
+                                                                        src="{{ item.title_image.url }}"
+                                                                        alt=""></div>
+                                            <div class="shop-item-name">{{ item.title }}</div>
+                                            <div class="shop-item-prices">
+                                                {% if item.get_first_specs.sales_price %}
+                                                    <div class="shop-item-saleprice">{{ item.get_first_specs.sales_price }}
+                                                        грн
+                                                    </div>
+                                                {% endif %}
+                                                <div class="shop-item-price">{{ item.get_first_specs.price }} грн</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </section>
+
 
 {% endblock content %}
-

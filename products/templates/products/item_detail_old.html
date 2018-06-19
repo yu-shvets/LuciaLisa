@@ -1,0 +1,69 @@
+{% extends 'index.html' %}
+{% load widget_tweaks %}
+
+{% block content %}
+
+    {% if messages %}
+
+        <ul class="messages">
+        {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+        </ul>
+
+    {% endif %}
+
+    <img src="{{ item.title_image.url }}" >
+        <p>{{ item.title }}</p>
+
+        <p>Price: <span id="price"> {{ item.get_first_specs.price }}</span></p>
+
+        {% if item.specs_set.all|length > 1%}
+
+            <form method="post" action="{% url 'update_size' item.pk %}">
+              {% csrf_token %}
+
+            Size: {% render_field form.size %}
+
+
+            </form>
+
+        {% else %}
+
+
+        <p>Size: {{ item.get_first_specs.size }}</p>
+
+        {% endif %}
+
+
+    <form style="margin-top: 10px" action="{% url 'add' %}" method="POST">
+        {% csrf_token %}
+        <input type="hidden" name="size_id" id="size_id" value="{{ item.get_first_specs.id }}">
+        <button class="btn btn-default">Add to cart</button>
+    </form>
+
+
+    <div style="margin-top: 50px">
+    <p>Feedbacks</p>
+    <p id="feedback"></p>
+    {% for feedback in item.feedback_set.all %}
+        <p>
+            {{ feedback.feedback }}<br>
+      {{ feedback.name }} {{ feedback.created|date:'d-m-Y' }}
+        </p>
+    {% endfor %}
+    </div>
+
+    <div style="margin-top: 20px">
+    <form id="feedback_form" method="post" action="{% url 'feedback' item.pk %}">
+              {% csrf_token %}
+
+            <p>{{ feedback_form.feedback }}</p>
+            <p>{{ feedback_form.name }} {{ feedback_form.email }}</p>
+
+          <input type="submit" value="Leave feedback">
+          </form>
+    </div>
+
+{% endblock content %}
+

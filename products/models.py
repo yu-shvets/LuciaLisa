@@ -46,6 +46,18 @@ class Item(CommonInfo):
     type = models.CharField(choices=TYPE_CHOICES, max_length=9, blank=True, default='---------', verbose_name='type')
     category = models.ForeignKey(Category, on_delete=models.CASCADE, verbose_name='сategory')
     recommended_items = models.ManyToManyField('self', blank=True, verbose_name='recommended')
+    sales = models.PositiveIntegerField(blank=True, null=True)
+
+    def save(self, *args, **kwargs):
+        if self.sales:
+            for item in self.specs_set.all():
+                item.sales_price = item.price - item.price * self.sales / 100
+                item.save()
+        else:
+            for item in self.specs_set.all():
+                item.sales_price = None
+                item.save()
+        super().save(*args, **kwargs)
 
     def __str__(self):
         return "{}-{}".format(self.category, self.title)
@@ -76,6 +88,7 @@ class Specs(models.Model):
     weight = models.FloatField(blank=True, null=True, verbose_name='weight, gr')
     size = models.FloatField(blank=True, null=True, verbose_name='size')
     price = models.DecimalField(max_digits=11, decimal_places=2, verbose_name='price')
+    sales_price = models.DecimalField(max_digits=11, decimal_places=2, blank=True, null=True)
     specs = models.TextField(blank=True, null=True, verbose_name='other specs')
     item = models.ForeignKey(Item, on_delete=models.CASCADE)
 

@@ -1,5 +1,2932 @@
-.container {
-    width: 70%;
+.mb-10 {
+  margin-bottom: 10px;
 }
 
+.mb-20 {
+  margin-bottom: 20px;
+}
 
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.mb-70 {
+  margin-bottom: 70px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.mb-90 {
+  margin-bottom: 90px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mt-70 {
+  margin-top: 70px;
+}
+
+.mt-80 {
+  margin-top: 80px;
+}
+
+.mt-90 {
+  margin-top: 90px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+::-moz-selection {
+  background: rgba(51, 177, 133, 0.5);
+}
+
+::selection {
+  background: rgba(51, 177, 133, 0.5);
+}
+
+* {
+  font-family: "Montserrat", Serif;
+}
+
+.container-fluid {
+  max-width: 1480px;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.header-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 130px;
+}
+
+.header-form-search {
+  font-family: "Philosopher";
+  font-size: 16px;
+  width: 75%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.header-form-search:focus {
+  outline: none;
+  border-bottom: solid 2px #f7ceb0;
+}
+
+.header-form-search:hover {
+  border-bottom: solid 2px #f7ceb0;
+}
+
+.header-logo {
+  text-align: center;
+}
+
+.header-text {
+  font-family: "Philosopher";
+  font-style: italic;
+  font-size: 12px;
+}
+
+.header-number {
+  font-size: 18px;
+  font-family: "FuturaDemic";
+}
+
+.header-box-shop {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 130px;
+}
+
+.header-shop {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 120px;
+}
+
+.header-shop-heart {
+  margin-right: 15px;
+}
+
+.header-shop-heart img {
+  margin-right: 15px;
+}
+
+.header-shop-heart-number {
+  font-family: "FuturaDemic";
+}
+
+.header-shop-basket {
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  text-align: center;
+  font-family: "Philosopher";
+  color: white;
+  padding: 14px;
+  display: block;
+  width: 110px;
+  height: 50px;
+  background: #f7ceb0;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  border: solid 1px;
+}
+
+.header-shop-basket:hover {
+  background: white;
+  color: #f7ceb0;
+  border: solid 1px #f7ceb0;
+  text-decoration: none;
+}
+
+/*HEADER*/
+.slider {
+  height: 80vh;
+}
+
+.slider-img {
+  background-image: url(../../img/slider-background.png);
+  width: 100%;
+  height: 80vh;
+}
+
+/*SHOP TITLE*/
+.shop-title {
+  font-family: "Cassandra";
+  font-size: 60px;
+  text-align: center;
+  margin-top: 45px;
+}
+
+.shop-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.shop-box-item {
+  list-style-type: none;
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-top: 40px;
+}
+
+.shop-box-link {
+  font-size: 14px;
+  font-family: "FuturaDemic";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.shop-box-link:hover {
+  color: #f7ceb0;
+  text-decoration: none;
+  -webkit-transition: all .1s ease-out .1s;
+  transition: all .1s ease-out .1s;
+}
+
+.shop-item {
+  padding: 30px 0px;
+  border: solid 1px lightgrey;
+  text-align: center;
+  z-index: 1;
+  margin-left: -1px;
+  margin-top: -1px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.shop-item-likeimg {
+  display: none;
+}
+
+.shop-item:hover {
+  position: relative;
+  border: solid 1px #f7ceb0;
+  z-index: 10;
+}
+
+.shop-item:hover .shop-item-likeimg {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-left: 45%;
+  margin-top: -1px;
+}
+
+.shop-item-productimg {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: 100%;
+}
+
+.shop-item-name {
+  font-family: "FuturaDemic";
+  font-size: 18px;
+  color: black;
+}
+
+.shop-item-name:hover {
+  color: #f7ceb0;
+  -webkit-transition: all .1s ease-out .1s;
+  transition: all .1s ease-out .1s;
+}
+
+.shop-item-saleprice {
+  font-family: "Philosopher";
+  text-decoration: line-through;
+  font-size: 16px;
+  margin-right: 15px;
+  color: black;
+}
+
+.shop-item-price {
+  font-family: "Philosopher";
+  font-size: 16px;
+  color: black;
+}
+
+.shop-item-prices {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.shop-items-onecolumn div a:hover {
+  text-decoration: none;
+}
+
+.description {
+  margin-top: 30px;
+}
+
+.description-box {
+  margin-left: 20%;
+  width: 750px;
+  height: 310px;
+  background: white;
+  outline: 5px solid #f0f0f0;
+  outline-offset: -15px;
+  -webkit-box-shadow: 0px 0px 25px #f0f0f0;
+          box-shadow: 0px 0px 25px #f0f0f0;
+  margin: 0 auto;
+  z-index: 10;
+  position: relative;
+}
+
+.description-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 55%;
+}
+
+.description-text {
+  width: 75%;
+  margin: 0 auto;
+  font-size: 18px;
+  font-family: "Philosopher";
+  text-align: center;
+}
+
+.news {
+  margin-top: 50px;
+}
+
+.news-title {
+  text-align: center;
+  font-family: "Cassandra";
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+
+.news-img-discont {
+  width: 100%;
+}
+
+.news-one-post {
+  padding-bottom: 30px;
+}
+
+.news-one-post-img {
+  width: 100%;
+  height: 193px;
+}
+
+.news-one-post-data {
+  float: left;
+  margin-right: 50px;
+  font-size: 16px;
+  font-family: "Philosopher";
+  color: lightgrey;
+}
+
+.news-one-post-data-link {
+  font-size: 16px;
+  font-family: "Philosopher";
+  color: lightgrey;
+}
+
+.news-one-post-data-link:hover {
+  text-decoration: none;
+}
+
+.news-one-post-counter {
+  font-family: "Philosopher";
+  font-size: 16px;
+  color: lightgrey;
+}
+
+.news-one-post-counter-link {
+  font-family: "Philosopher";
+  font-size: 16px;
+  color: lightgrey;
+}
+
+.news-one-post-counter-link:hover {
+  text-decoration: none;
+}
+
+.news-one-post-title {
+  font-size: 28px;
+  font-family: "FuturaDemic";
+}
+
+.news-one-post-title-link {
+  font-size: 28px;
+  text-decoration: none;
+  color: #000;
+  font-family: "FuturaDemic";
+}
+
+.news-one-post-title-link:hover {
+  color: #f7ceb0;
+  text-decoration: none;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.news-one-post-description {
+  font-family: "Philosopher";
+  font-size: 16px;
+  margin-top: 18px;
+  overflow: hidden;
+  height: 50px;
+}
+
+.news-one-post-description-link {
+  font-family: "Philosopher";
+  font-size: 16px;
+  margin-top: 18px;
+  overflow: hidden;
+  height: 50px;
+  color: #000;
+}
+
+.news-one-post-description-link:hover {
+  text-decoration: none;
+}
+
+.news-one-post-link {
+  color: black;
+  font-size: 16px;
+  font-family: "FuturaDemic";
+}
+
+.news-one-post-link:hover {
+  color: #f7ceb0;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  text-decoration: none;
+}
+
+.news-two-post-img {
+  width: 100%;
+  height: 192px;
+}
+
+.news-two-post-data {
+  float: left;
+  margin-right: 50px;
+  font-size: 16px;
+  font-family: "Philosopher";
+  color: lightgrey;
+}
+
+.news-two-post-data-link {
+  font-size: 16px;
+  font-family: "Philosopher";
+  color: lightgrey;
+}
+
+.news-two-post-data-link:hover {
+  text-decoration: none;
+}
+
+.news-two-post-counter {
+  font-family: "Philosopher";
+  font-size: 16px;
+  color: lightgrey;
+}
+
+.news-two-post-counter-link {
+  font-family: "Philosopher";
+  font-size: 16px;
+  color: lightgrey;
+}
+
+.news-two-post-counter-link:hover {
+  text-decoration: none;
+}
+
+.news-two-post-title {
+  font-size: 28px;
+  font-family: "FuturaDemic";
+}
+
+.news-two-post-title-link {
+  font-size: 28px;
+  text-decoration: none;
+  color: #000;
+  font-family: "FuturaDemic";
+}
+
+.news-two-post-title-link:hover {
+  color: #f7ceb0;
+  text-decoration: none;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.news-two-post-description {
+  font-family: "Philosopher";
+  font-size: 16px;
+  margin-top: 18px;
+  overflow: hidden;
+  height: 50px;
+}
+
+.news-two-post-description-link {
+  font-family: "Philosopher";
+  font-size: 16px;
+  margin-top: 18px;
+  overflow: hidden;
+  height: 50px;
+  color: #000;
+}
+
+.news-two-post-description-link:hover {
+  text-decoration: none;
+}
+
+.news-two-post-link {
+  color: black;
+  font-size: 16px;
+  font-family: "FuturaDemic";
+}
+
+.news-two-post-link:hover {
+  color: #f7ceb0;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  text-decoration: none;
+}
+
+.news .item-sale {
+  background: #f7f7f7;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #222222;
+}
+
+.news .item-sale-title {
+  font-size: 48px;
+  font-family: "Cassandra";
+  padding-bottom: 15px;
+}
+
+.news .item-sale-title-link {
+  font-family: "Cassandra";
+  color: #222222;
+}
+
+.news .item-sale-title-link:hover {
+  text-decoration: none;
+  color: #f7ceb0;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.news .item-sale-description {
+  padding-top: 15px;
+  font-family: "Philosopher";
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 18px;
+}
+
+.news .item-sale-description-link {
+  font-family: "Philosopher";
+  text-decoration: none;
+  color: #222222;
+}
+
+.news .item-sale-description-link:hover {
+  color: #f7ceb0;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.callback-news {
+  margin-bottom: 30px;
+}
+
+.callback-news-title {
+  text-align: center;
+  font-family: "Cassandra";
+  font-size: 36px;
+}
+
+.callback-news form {
+  display: table;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  width: 50%;
+  padding: 3px;
+}
+
+.callback-news-form-email {
+  border: none;
+  width: 75%;
+  padding-left: 15px;
+  font-family: "FuturaDemic";
+  letter-spacing: 1px;
+}
+
+.callback-news-form-email:focus {
+  outline: 0;
+}
+
+.callback-news-form-button {
+  width: 25%;
+  padding: 15px;
+  border: solid 1px white;
+  background: #f7ceb0;
+  color: white;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  font-family: "FuturaDemic";
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 14px;
+}
+
+.callback-news-form-button:focus {
+  outline: 0;
+}
+
+.callback-news-form-button:hover {
+  background: white;
+  color: #f7ceb0;
+  border: solid 1px #f7ceb0;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.features {
+  height: 75px;
+  margin: 0 212px;
+  border-top: solid 1px grey;
+  border-bottom: solid 1px grey;
+  margin-bottom: 45px;
+}
+
+.features-description {
+  margin-left: 15px;
+  font-family: "Philosopher";
+  font-size: 18px;
+}
+
+.features-box {
+  text-align: center;
+}
+
+.features-box-icon {
+  height: 75px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer {
+  -webkit-box-shadow: inset 0px 0 21px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0px 0 21px rgba(0, 0, 0, 0.1);
+  background: #fff3ea;
+  height: 300px;
+  padding-top: 40px;
+}
+
+.footer-logo {
+  text-align: center;
+}
+
+.footer-number {
+  text-align: center;
+  font-family: "FuturaDemic";
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.footer-name-nav {
+  font-size: 18px;
+  font-family: "FuturaDemic";
+  text-transform: uppercase;
+  text-align: center;
+  padding-right: 56px;
+}
+
+.footer-nav {
+  list-style-type: none;
+}
+
+.footer-item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  font-family: "Philosopher";
+  color: #000;
+  font-size: 16px;
+}
+
+.footer-link:hover {
+  text-decoration: none;
+}
+
+.footer-box-nav-collection {
+  margin-top: 35px;
+}
+
+.footer-name-info {
+  font-size: 18px;
+  font-family: "FuturaDemic";
+  text-transform: uppercase;
+  text-align: center;
+  padding-right: 10px;
+}
+
+.certificate {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 55px;
+  background: #f7ceb0;
+}
+
+.certificate-boxvisa {
+  margin: 0 5%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.certificate-boxliqpay {
+  margin: 0 5%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.certificate-boxsmm {
+  margin: 0 5%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.certificate-visa {
+  color: #6a6a6a;
+  font-family: "FuturaDemic";
+  font-size: 14px;
+  margin-right: 25px;
+}
+
+.certificate-liqpay {
+  color: #6a6a6a;
+  font-family: "FuturaDemic";
+  font-size: 14px;
+  margin-right: 25px;
+}
+
+.certificate-smm {
+  color: #6a6a6a;
+  font-family: "FuturaDemic";
+  font-size: 14px;
+  margin-right: 25px;
+}
+
+.certificate-linkinstagramm {
+  margin: 0 25px;
+}
+
+.test {
+  float: left;
+  width: 25%;
+}
+
+.test-test {
+  padding: 25px;
+  width: 100%;
+  height: 270px;
+}
+
+.slider-img {
+  background-size: cover;
+}
+
+.header-navigation nav {
+  border-top: solid 1px lightgrey;
+  border-bottom: solid 1px lightgrey;
+}
+
+.header-navigation .fa-bars {
+  color: black;
+}
+
+.header-navigation ul {
+  list-style: none;
+  margin: 0 auto;
+  margin-left: 11.5%;
+  padding: 0;
+}
+
+.header-navigation a {
+  text-decoration: none;
+}
+
+.header-navigation .top-menu {
+  position: relative;
+}
+
+.header-navigation .top-menu:after, .header-navigation .submenu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.header-navigation .top-menu > li {
+  float: left;
+}
+
+.header-navigation .top-menu > li > a {
+  font-family: "FuturaDemic";
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0px 30px;
+  border-left: solid 1px lightgrey;
+  border-right: solid 1px lightgrey;
+  margin-left: -1px;
+  padding-top: 10px;
+  height: 70px;
+  line-height: 46px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.header-navigation .top-menu > li > a:hover {
+  color: #f7ceb0;
+  cursor: pointer;
+}
+
+.header-navigation .top-menu > li > a > img {
+  display: block;
+  margin: 0 auto;
+  margin-top: -10px;
+}
+
+.header-navigation .dropdown:after {
+  font-family: FontAwesome;
+  margin-left: 4px;
+  vertical-align: top;
+}
+
+.header-navigation .submenu, .header-navigation .submenu-standart {
+  border-top: 1px solid #e5e5e5;
+  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.07);
+          box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.07);
+  background: white;
+  padding: 25px 0;
+  margin: 0px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 5;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translate3d(0, 30px, 0);
+          transform: translate3d(0, 30px, 0);
+  -webkit-transition: .5s ease-out;
+  transition: .5s ease-out;
+  -webkit-transform-origin: 0% 0%;
+      -ms-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+.header-navigation .submenu {
+  width: 100%;
+}
+
+.header-navigation .submenu-standart {
+  min-width: 200px;
+  padding: 10px 0;
+}
+
+.header-navigation .link-standart {
+  position: relative;
+}
+
+.header-navigation .top-menu > li:hover .submenu, .header-navigation .top-menu > li:hover .submenu-standart {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.header-navigation .submenu > li {
+  float: left;
+  width: -webkit-calc(100% / 3);
+  width: calc(100% / 3);
+  padding: 0 18px;
+  border-right: 1px solid #e5e5e5;
+}
+
+.header-navigation .submenu-standart li {
+  padding: 0 18px;
+}
+
+.header-navigation .submenu > li:last-child {
+  border-right: none;
+}
+
+.header-navigation .submenu img {
+  display: block;
+  width: 100%;
+}
+
+.header-navigation .submenu li a, .header-navigation .submenu-standart li a {
+  display: block;
+  padding: 5px 0;
+  color: #666;
+  font-size: 13px;
+  font-family: "FuturaDemic";
+}
+
+.header-navigation .submenu li a:hover, .header-navigation .submenu-standart li a:hover {
+  color: #f7ceb0;
+}
+
+.header-navigation .submenu li .link-image {
+  padding: 0;
+}
+
+.header-navigation .submenu li a:hover {
+  color: #B03062;
+}
+
+.header-navigation .submenu h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.header-navigation .containerss {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.header-navigation .content {
+  padding: 20px;
+  background: white;
+}
+
+.header-navigation label {
+  display: none;
+  width: 100%;
+  font-size: 20px;
+  color: white;
+  line-height: 49px;
+  padding-left: 20px;
+}
+
+.header-navigation input {
+  display: none;
+  position: absolute;
+}
+
+@media (max-width: 768px) {
+  .header-navigation label {
+    display: block;
+  }
+  .header-navigation .top-menu {
+    display: none;
+  }
+  .header-navigation nav #mobile-button:checked + ul {
+    margin-left: 0px;
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 10;
+  }
+  .header-navigation .top-menu li {
+    width: 100%;
+    height: auto !important;
+  }
+  .header-navigation .top-menu li a {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 12px;
+    font-family: "FuturaDemic";
+  }
+  .header-navigation .top-menu > li {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .header-navigation .submenu,
+  .header-navigation .submenu-standart {
+    margin-left: 0px;
+    position: relative;
+    display: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.02);
+  }
+  .header-navigation .submenu-standart {
+    padding: 10px 0;
+  }
+  .header-navigation .submenu > li {
+    border-right: none;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 18px;
+  }
+  .header-navigation .submenu h3 {
+    margin: 0 0 10px;
+  }
+  .header-navigation .submenu .image-header {
+    margin: 10px 0;
+  }
+  .header-navigation .submenu li:last-of-type {
+    border-bottom: none;
+  }
+  .header-navigation .top-menu > li:hover .submenu,
+  .header-navigation .top-menu > li:hover .submenu-standart {
+    display: block;
+  }
+}
+
+.bg-wrapper {
+  margin-top: -110px;
+}
+
+.sm-wrapper {
+  font-size: 0;
+}
+
+.lions {
+  width: 50%;
+  height: 600px;
+  display: inline-block;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+.lions-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: skewY(4deg);
+      -ms-transform: skewY(4deg);
+          transform: skewY(4deg);
+  padding-left: 50%;
+}
+
+.lions-title {
+  font-family: "Philosopher";
+  font-size: 24px;
+  color: black;
+}
+
+.lions-title:hover {
+  color: black;
+}
+
+.lions-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-image: url(../../img/lions.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+  -webkit-transition: ease 500ms;
+  transition: ease 500ms;
+}
+
+.lions-img:hover {
+  text-decoration: none;
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+}
+
+.revived {
+  width: 50%;
+  height: 600px;
+  display: inline-block;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+.revived-title {
+  font-family: "Philosopher";
+  font-size: 24px;
+  color: black;
+}
+
+.revived-title:hover {
+  color: black;
+}
+
+.revived-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  padding-right: 50%;
+  -webkit-transform: skewY(4deg);
+      -ms-transform: skewY(4deg);
+          transform: skewY(4deg);
+  padding-top: 13%;
+}
+
+.revived-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-image: url(../../img/revived.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+  -webkit-transition: ease 500ms;
+  transition: ease 500ms;
+}
+
+.revived-img:hover {
+  text-decoration: none;
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+}
+
+.bg-wrapper {
+  overflow: hidden;
+  -webkit-transform: skewY(-4deg);
+      -ms-transform: skewY(-4deg);
+          transform: skewY(-4deg);
+}
+
+nav {
+  -webkit-box-shadow: 0px 7px 15px lightgrey;
+          box-shadow: 0px 7px 15px lightgrey;
+}
+
+.breadcrumbs-nav {
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px;
+  list-style-type: none;
+}
+
+.breadcrumbs-nav-item {
+  font-family: "Philosopher";
+  margin-right: 15px;
+  font-size: 13px;
+}
+
+.breadcrumbs-nav-link {
+  font-family: "Philosopher";
+  color: black;
+}
+
+.breadcrumbs-nav-link:hover {
+  text-decoration: none;
+  color: #f7ceb0;
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkbox-custom {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.checkbox-custom,
+.label {
+  display: inline-block;
+  vertical-align: middle;
+  color: black;
+  font-family: "Philosopher";
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.checkbox:checked + .checkbox-custom::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  bottom: 4px;
+  left: 2px;
+  background-image: url(../img/checkbox.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+}
+
+.shops {
+  margin-bottom: 30px;
+}
+
+.shops-title {
+  font-family: "Cassandra";
+  font-size: 60px;
+}
+
+.shops-items {
+  list-style-type: none;
+}
+
+.shops-items li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.shops-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: solid 1px lightgrey;
+}
+
+.shops-sortirovka {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
+  color: black;
+  font-family: "Philosopher";
+  font-size: 16px;
+  width: 50%;
+  float: left;
+}
+
+.shops-show {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  font-family: "Philosopher";
+  font-size: 16px;
+  float: right;
+  width: 50%;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.shops-show .open > .dropdown-menu {
+  min-width: 62px;
+}
+
+.shops-show .dropdown-item {
+  padding: 10px 0px;
+}
+
+.shops-items .test {
+  width: 33.3%;
+}
+
+.shops-items .test-link {
+  text-decoration: none;
+}
+
+.shops-footer {
+  margin-left: -1px;
+  margin-right: 1px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: solid 1px lightgrey;
+}
+
+.shops-footer-prev {
+  width: 33.3%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.shops-footer-prev-link {
+  padding: 15px 25px;
+  font-family: "Philosopher";
+  font-size: 16px;
+  color: grey;
+}
+
+.shops-footer-prev-link:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.shops-footer-prev-link:hover img {
+  opacity: 1;
+}
+
+.shops-footer-prev-img {
+  opacity: .3;
+}
+
+.shops-footer-next {
+  width: 33.3%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.shops-footer-next-link {
+  margin-right: -1px;
+  padding: 15px 25px;
+  color: grey;
+  font-family: "Philosopher";
+  font-size: 16px;
+  border-left: none;
+}
+
+.shops-footer-next-link-active {
+  background: #f7ceb0;
+  color: black;
+}
+
+.shops-footer-next-link-active img {
+  opacity: 1;
+}
+
+.shops-footer-next-link:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.shops-footer-next-link:hover img {
+  opacity: 1;
+}
+
+.shops-footer-next-img {
+  opacity: .3;
+}
+
+.shops-footer-counter {
+  width: 33.3%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.shops-footer-counter-items {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.shops-footer-counter-item-active {
+  background: #f7ceb0;
+}
+
+.shops-footer-counter-link-active {
+  display: block;
+  padding: 15px 20px;
+  color: black;
+  font-family: "Philosopher";
+  font-size: 16px;
+}
+
+.shops-footer-counter-link-active:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.shops-footer-counter-link {
+  display: block;
+  padding: 15px 20px;
+  color: black;
+  font-family: "Philosopher";
+  font-size: 16px;
+}
+
+.shops-footer-counter-link:hover {
+  text-decoration: none;
+  color: #f7ceb0;
+}
+
+.btn {
+  font-family: "Philosopher";
+  padding: 10px 20px;
+  color: black;
+  font-size: 16px;
+}
+
+.open > .dropdown-menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 140px;
+  margin-left: 10px;
+  top: -3px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: solid 1px lightgrey;
+  -webkit-border-radius: 0px;
+          border-radius: 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-shadow: 1px 0px 16px rgba(0, 0, 0, 0.14);
+          box-shadow: 1px 0px 16px rgba(0, 0, 0, 0.14);
+}
+
+.open > .dropdown-menu:hover {
+  color: #f7ceb0;
+}
+
+.dropdown-item {
+  color: black;
+  font-size: 16px;
+  padding: 15px 0px;
+  font-family: "Philosopher";
+  content: "";
+}
+
+.dropdown-item:hover {
+  text-decoration: none;
+  color: #f7ceb0;
+}
+
+.shops-footer-prev-2 {
+  display: none;
+}
+
+.shops-footer-next-2 {
+  display: none;
+}
+
+.shops-footer-prev-link {
+  padding: 15px 25px;
+  font-family: "Philosopher";
+  font-size: 16px;
+  color: grey;
+}
+
+.shops-footer-prev-link-active {
+  padding: 15px 25px;
+  font-family: "Philosopher";
+  font-size: 16px;
+  color: black;
+  background: #f7ceb0;
+}
+
+.shops-footer-prev-link-active:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.shops-footer-next-link {
+  margin-right: -1px;
+  padding: 15px 25px;
+  font-family: "Philosopher";
+  font-size: 16px;
+  border-left: none;
+  color: grey;
+}
+
+.shops-footer-next-link-active {
+  margin-right: -1px;
+  padding: 15px 25px;
+  color: black;
+  background: #f7ceb0;
+  font-family: "Philosopher";
+  font-size: 16px;
+  border-left: none;
+}
+
+.shops-footer-next-link-active:hover {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  margin: 0 0 15px;
+}
+
+.product-title {
+  font-size: 60px;
+  font-family: "Cassandra";
+}
+
+.product-subtitle {
+  font-size: 16px;
+  font-family: "Philosopher";
+  color: #848484;
+}
+
+.product-img {
+  text-align: center;
+  padding: 60px;
+  padding-right: 0px;
+}
+
+.products-img {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sm-info-product {
+  font-family: "Philosopher";
+  font-size: 16px;
+}
+
+.pay-product {
+  margin-top: 35px;
+  font-family: "Philosopher";
+  font-size: 60px;
+}
+
+.pay-currency {
+  margin-left: 10px;
+  font-family: "Philosopher";
+  font-size: 30px;
+}
+
+.button-for-buy-product {
+  margin-top: 35px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: white;
+  font-family: "FuturaDemic";
+  text-transform: uppercase;
+  letter-spacing: 2.2px;
+  width: 180px;
+  height: 55px;
+  border: solid #f7ceb0;
+  background: #f7ceb0;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.button-for-buy-product:focus {
+  outline: 0;
+}
+
+.button-for-buy-product:hover {
+  background: white;
+  color: #f7ceb0;
+  border: solid 1px #f7ceb0;
+}
+
+.info-product {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Philosopher";
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.info-text-product {
+  font-family: "Philosopher";
+  font-weight: lighter;
+}
+
+.box-social-links {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 45px;
+}
+
+.social-links {
+  margin-left: 5px;
+  margin-right: 5px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: lightgrey solid 1px;
+  font-size: 18px;
+  color: black;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.social-links:hover {
+  border: #f7ceb0 solid 1px;
+  color: #f7ceb0;
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.share-social-links {
+  margin-top: 40px;
+  font-size: 16px;
+  font-family: "FuturaDemic";
+}
+
+.box-discounts {
+  margin-top: 65px;
+  text-align: center;
+  font-family: "Philosopher";
+}
+
+.name-discounts {
+  font-family: "FuturaDemic";
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.discount {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-family: "Philosopher";
+  text-align: left;
+}
+
+.features-boximg {
+  text-align: center;
+}
+
+.features-title {
+  font-family: "Philosopher";
+  font-size: 18px;
+  text-align: center;
+}
+
+.features-pg {
+  font-family: "FuturaDemic";
+  font-size: 16px;
+  padding-left: 80px;
+}
+
+.features-pg-info {
+  font-family: "Philosopher";
+}
+
+.features-pg-info-word {
+  font-family: "Philosopher";
+  font-size: 16px;
+  color: #f7ceb0;
+}
+
+.features-pay {
+  margin-top: 50px;
+}
+
+.features-exchange {
+  margin-top: 50px;
+}
+
+.title-ch-product {
+  font-family: "FuturaDemic";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.character-product {
+  padding: 25px 40px;
+  padding-bottom: 15px;
+  border-top: solid 1px lightgrey;
+  border-bottom: solid 1px lightgrey;
+}
+
+.column-pg {
+  font-family: "Philosopher";
+  font-size: 16px;
+}
+
+.column-pg-t {
+  font-family: "FuturaDemic";
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.txt-p-character {
+  font-family: "Philosopher";
+  font-size: 16px;
+  margin: 0px;
+  padding: 25px;
+}
+
+.title-rw-product {
+  font-family: "FuturaDemic";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.txt-reviwes {
+  font-family: "Philosopher";
+  font-size: 16px;
+}
+
+.name-rw {
+  font-family: "FuturaDemic";
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.data-rw {
+  margin-left: 15px;
+  font-family: "FuturaDemic";
+}
+
+.wrapper-reviwes {
+  border-bottom: solid 1px lightgrey;
+}
+
+.add-reviwes {
+  text-align: center;
+}
+
+.add-reviwes-title {
+  font-family: "FuturaDemic";
+}
+
+.add-reviwes-form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.add-reviwes-box-name-email {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 30px 0px;
+}
+
+.add-reviwes-txt-product {
+  margin-top: 10px;
+  width: 100%;
+  height: 160px;
+  border: solid 1px lightgrey;
+  color: grey;
+  padding: 15px;
+  padding-bottom: 15%;
+  font-family: "Philosopher";
+  color: lightgrey;
+  font-size: 16px;
+}
+
+.add-reviwes-txt-product:focus {
+  outline: 0;
+  border: solid 1px #f7ceb0;
+  color: black;
+}
+
+.add-reviwes-txt-name {
+  width: 47%;
+  margin-right: 3%;
+  height: 60px;
+  border: solid 1px lightgrey;
+  padding: 15px;
+  font-family: "Philosopher";
+  color: lightgrey;
+  font-size: 16px;
+}
+
+.add-reviwes-txt-name:focus {
+  outline: 0;
+  border: solid 1px #f7ceb0;
+  color: black;
+}
+
+.add-reviwes-txt-email {
+  margin-left: 3%;
+  width: 47%;
+  height: 60px;
+  border: solid 1px lightgrey;
+  padding: 15px;
+  font-family: "Philosopher";
+  color: lightgrey;
+  font-size: 16px;
+}
+
+.add-reviwes-txt-email:focus {
+  outline: 0;
+  border: solid 1px #f7ceb0;
+  color: black;
+}
+
+.add-reviwes-send {
+  width: 30%;
+  height: 60px;
+  background: #f7ceb0;
+  border: solid 1px #f7ceb0;
+  text-transform: uppercase;
+  color: white;
+  font-family: "FuturaDemic";
+  letter-spacing: 2px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.add-reviwes-send:focus {
+  outline: 0;
+}
+
+.add-reviwes-send:hover {
+  background: white;
+  color: #f7ceb0;
+}
+
+.related-products {
+  margin: 30px 0px;
+}
+
+.related-products-title {
+  font-size: 60px;
+  font-family: "Cassandra";
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1200px) {
+  .header-box-shop {
+    text-align: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header-shop {
+    margin: 0px;
+  }
+  .news-one-post {
+    padding: 0px;
+  }
+  .news-one-post-img {
+    height: 100%;
+    width: 100%;
+  }
+  .news-one-post-title {
+    font-size: 23px;
+  }
+  .news-one-post-title-link {
+    font-size: 23px;
+  }
+  .news-one-post-description {
+    margin: 0px;
+  }
+  .news-two-post-img {
+    height: 100%;
+    width: 100%;
+  }
+  .news-two-post-title {
+    font-size: 23px;
+  }
+  .news-two-post-title-link {
+    font-size: 23px;
+  }
+  .news-two-post-description {
+    margin: 0px;
+  }
+  .test {
+    width: 50%;
+  }
+  .news .item-sale {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .news .item-sale-title {
+    font-size: 36px;
+  }
+  .news .item-sale-description {
+    padding: 0px;
+    font-size: 16px;
+  }
+  .item-sale-img {
+    width: 115px;
+  }
+  .callback-news-form-email {
+    width: 70%;
+    padding-left: 5px;
+  }
+  .callback-news-form-button {
+    width: 30%;
+  }
+  .certificate-boxvisa {
+    margin: 0px;
+  }
+  .certificate-boxsmm {
+    margin: 0px;
+  }
+  .features {
+    margin: 40px 80px;
+  }
+  .lions {
+    width: 50%;
+    height: 450px;
+  }
+  .lions-info {
+    padding: 0px;
+  }
+  .lions-info img {
+    -webkit-filter: contrast(2);
+            filter: contrast(2);
+  }
+  .revived {
+    width: 50%;
+    height: 450px;
+  }
+  .revived-info {
+    padding: 0px;
+  }
+  .shops-items {
+    padding: 0px;
+  }
+  .label {
+    padding: 0px;
+    padding-left: 10px;
+    font-size: 14px;
+  }
+  .pay-product {
+    margin: 0px;
+  }
+  .button-for-buy-product {
+    margin: 0px;
+  }
+  .features-pg {
+    padding-left: 25px;
+  }
+  .box-discounts {
+    margin-top: 15px;
+  }
+  .social-links {
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+  }
+  .features-pay {
+    margin-top: 20px;
+  }
+  .features-exchange {
+    margin-top: 20px;
+  }
+  .discount {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 15px;
+  }
+  .character-product {
+    padding: 15px 20px;
+  }
+  .name-rw {
+    margin-bottom: 15px;
+  }
+  .add-reviwes-box-name-email {
+    margin: 15px 0px;
+  }
+  .add-reviwes-send {
+    width: 45%;
+  }
+  .txt-p-character {
+    padding: 15px;
+  }
+  .add-reviwes-txt-product {
+    padding-bottom: 20%;
+  }
+}
+
+@media (max-width: 991px) {
+  .header-box-shop {
+    display: block;
+    text-align: center;
+    height: auto;
+  }
+  .header-shop {
+    margin: 0px;
+  }
+  .nav-link {
+    padding: 20px 26px;
+    border: none;
+  }
+  .nav-link-item {
+    padding-bottom: 10px;
+  }
+  .nav-link:last-child {
+    border: none;
+  }
+  .nav-items {
+    margin: 0px;
+  }
+  .navbar {
+    width: 122px;
+  }
+  .navbar-about {
+    width: 160px;
+  }
+  .shop-items-onecolumn {
+    margin-top: 25px;
+  }
+  .shop-item {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  .shop-box-menu {
+    margin: 0px;
+    padding: 0px;
+  }
+  .shop-box-item {
+    padding: 0px;
+    margin: 0 10px;
+    text-align: center;
+  }
+  .shop-box-link {
+    letter-spacing: 0px;
+  }
+  .news-one-post-img {
+    width: auto;
+    height: auto;
+    float: left;
+    margin-right: 15px;
+  }
+  .news-two-post-img {
+    width: auto;
+    height: auto;
+    float: left;
+    margin-right: 15px;
+  }
+  .features {
+    height: 100%;
+    margin: 0px;
+  }
+  .footer-box-nav-collection {
+    display: none;
+  }
+  .news-img-discont {
+    margin-bottom: 15px;
+  }
+  .footer-nav {
+    padding: 0px;
+    padding-top: 15px;
+  }
+  .footer-name-nav {
+    float: left;
+  }
+  .footer-name-info {
+    float: left;
+  }
+  .footer-box-nav-collection-sm {
+    display: block;
+  }
+  .test {
+    width: 50%;
+    margin-top: -16px;
+  }
+  .description-box {
+    width: 100%;
+  }
+  .footer {
+    margin-top: 20px;
+  }
+  .footer-box-item {
+    display: none;
+  }
+  .certificate-boxvisa {
+    margin-left: 10px;
+    display: Block;
+  }
+  .certificate-boxliqpay {
+    margin: 0px;
+  }
+  .certificate-boxsmm {
+    margin-right: 10px;
+    display: block;
+  }
+  .certificate-smm {
+    display: none;
+  }
+  .certificate-visa {
+    display: none;
+  }
+  .certificate-liqpay {
+    display: none;
+  }
+  .item-sale {
+    margin-top: 20px;
+  }
+  label {
+    border-bottom: solid 1px lightgrey;
+    margin: 0px;
+  }
+  .callback-news-form-email {
+    width: 60%;
+    padding: 0px;
+  }
+  .callback-news-form-button {
+    width: 40%;
+    font-size: 12px;
+    letter-spacing: 0px;
+    padding: 12px;
+  }
+  .test {
+    width: 50%;
+  }
+  .news {
+    text-align: center;
+  }
+  .news-img-discont {
+    width: auto;
+  }
+  .news-one-post-img {
+    float: none;
+    margin: 0px;
+  }
+  .news-one-post-data {
+    float: none;
+    margin: 0px;
+  }
+  .news-two-post {
+    margin-top: 15px;
+  }
+  .news-two-post-img {
+    float: none;
+    margin: 0px;
+  }
+  .news-two-post-data {
+    float: none;
+    margin: 0px;
+  }
+  .certificate-boxsmm {
+    margin: 0 15px;
+  }
+  .certificate-boxvisa {
+    margin: 0 15px;
+  }
+  .certificate-boxliqpay {
+    margin: 0 15px;
+  }
+  .bg-wrapper {
+    margin-top: 50px;
+  }
+  .lions {
+    width: 100%;
+    height: 450px;
+  }
+  .lions-info {
+    padding: 0px;
+  }
+  .lions-info img {
+    -webkit-filter: contrast(2);
+            filter: contrast(2);
+  }
+  .revived {
+    width: 100%;
+    height: 450px;
+  }
+  .revived-info {
+    padding: 0px;
+  }
+  .shops-items {
+    padding: 0px;
+  }
+  .shops-items .test {
+    width: 50%;
+  }
+  label {
+    border: none;
+  }
+  .shops-title {
+    font-size: 39px;
+  }
+  .shops-box {
+    display: block;
+    padding-left: 10px;
+    padding-bottom: 15px;
+  }
+  .shops-sortirovka {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 0px;
+  }
+  .shops-show {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: left;
+    -webkit-justify-content: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    float: none;
+  }
+  .shops-footer-prev {
+    display: none;
+  }
+  .shops-footer-counter {
+    width: 100%;
+  }
+  .shops-footer-next {
+    display: none;
+  }
+  .shops-footer-prev-2 {
+    display: block;
+  }
+  .shops-footer-next-2 {
+    display: block;
+  }
+  .shops-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .shops-footer-nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .shops-footer-prev-2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+  }
+  .shops-footer-next-2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+  }
+  .box-info-product {
+    text-align: center;
+  }
+  .box-social-links {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .discount {
+    text-align: center;
+  }
+  .box-discounts {
+    margin-bottom: 50px;
+  }
+  .features-pg {
+    padding: 10px;
+    text-align: center;
+  }
+  .features-pay {
+    margin-top: 30px;
+  }
+  .box-character {
+    margin-top: 30px;
+    border-top: solid 1px lightgrey;
+  }
+  .title-ch-product {
+    margin: 0px;
+    padding: 15px;
+  }
+  .txt-p-character {
+    padding: 10px;
+  }
+  .title-rw-product {
+    margin: 0px;
+    padding: 15px;
+    border-top: solid 1px lightgrey;
+    border-bottom: solid 1px lightgrey;
+  }
+  .txt-reviwes {
+    padding: 10px;
+    margin: 0px;
+  }
+  .name-rw {
+    padding: 10px;
+    margin-bottom: 0px;
+  }
+  .add-reviwes-txt-product {
+    padding-bottom: 15%;
+  }
+  .add-reviwes-box-name-email {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 10px 0px;
+  }
+  .add-reviwes-txt-name {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .add-reviwes-txt-email {
+    width: 100%;
+    margin: 0px;
+  }
+  .add-reviwes-send {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .img-fluid-full {
+    padding: 30%;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 300px;
+  }
+  .header-box-shop {
+    margin-top: 20px;
+  }
+  .header-logo {
+    margin-top: 20px;
+  }
+  .header-form {
+    text-align: center;
+  }
+  .news-one-post-title-link {
+    display: inline-block;
+    font-size: 25px;
+  }
+  .news-two-post-title-link {
+    font-size: 25px;
+  }
+  .news .item-sale {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .news .item-sale-description {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .test {
+    width: 100%;
+  }
+  .description-text {
+    width: 85%;
+    font-size: 16px;
+  }
+  .footer {
+    height: 100%;
+  }
+  .footer-box-nav-collection {
+    display: block;
+    margin-top: 0px;
+  }
+  .footer-box-nav-collection-sm {
+    margin-top: 0px;
+    height: 110px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-box-nav-collection-sm .footer-item {
+    text-align: center;
+  }
+  .certificate-boxvisa {
+    margin: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .certificate-boxliqpay {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .certificate-boxvisa img {
+    width: 100%;
+  }
+  .certificate-boxliqpay img {
+    width: 100%;
+  }
+  .certificate-boxsmm {
+    margin: 0px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .slider-img {
+    background-size: cover;
+  }
+  .shop-box-menu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .shop-box-item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .certificate {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 120px;
+  }
+  .callback-news form {
+    width: 100%;
+  }
+  .callback-news-form-email {
+    padding: 0px;
+    width: 60%;
+  }
+  .callback-news-form-button {
+    font-size: 12px;
+    letter-spacing: 0px;
+    width: 40%;
+    padding: 12px;
+  }
+  .footer-number {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .news-one-post {
+    text-align: center;
+  }
+  .news-one-post-img {
+    float: none;
+    margin: 0px;
+  }
+  .news-one-post-counter {
+    width: 100%;
+    float: left;
+  }
+  .news-one-post-data {
+    margin-right: 0px;
+    width: 100%;
+  }
+  .news-two-post {
+    margin-top: 15px;
+    text-align: center;
+  }
+  .news-two-post-img {
+    float: none;
+    margin: 0px;
+  }
+  .news-two-post-data {
+    width: 100%;
+  }
+  .bg-wrapper {
+    margin-top: 20px;
+  }
+  .lions {
+    width: 100%;
+    height: 215px;
+  }
+  .lions-info {
+    padding: 0px;
+  }
+  .lions-info img {
+    width: 85%;
+    -webkit-filter: contrast(2);
+            filter: contrast(2);
+  }
+  .revived {
+    width: 100%;
+    height: 215px;
+  }
+  .revived-info {
+    padding: 0px;
+  }
+  .shops-items {
+    padding: 0px;
+  }
+  .shops-items .test {
+    width: 100%;
+  }
+  label {
+    border: none;
+  }
+  .shops-title {
+    font-size: 39px;
+  }
+  .shops-box {
+    display: block;
+    padding-left: 10px;
+    padding-bottom: 15px;
+  }
+  .shops-sortirovka {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 0px;
+  }
+  .shops-show {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: left;
+    -webkit-justify-content: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    float: none;
+  }
+  .shops-footer-prev {
+    display: none;
+  }
+  .shops-footer-counter {
+    width: 100%;
+  }
+  .shops-footer-next {
+    display: none;
+  }
+  .shops-footer-prev-2 {
+    display: block;
+  }
+  .shops-footer-next-2 {
+    display: block;
+  }
+  .shops-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .shops-footer-nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .shops-footer-prev-2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+  }
+  .shops-footer-next-2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+  }
+  .box-info-product {
+    text-align: center;
+  }
+  .box-social-links {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .discount {
+    text-align: center;
+  }
+  .box-discounts {
+    margin-bottom: 50px;
+  }
+  .features-pg {
+    padding: 10px;
+    text-align: center;
+  }
+  .features-pay {
+    margin-top: 30px;
+  }
+  .box-character {
+    margin-top: 30px;
+    border-top: solid 1px lightgrey;
+  }
+  .title-ch-product {
+    margin: 0px;
+    padding: 15px;
+  }
+  .txt-p-character {
+    padding: 10px;
+  }
+  .title-rw-product {
+    margin: 0px;
+    padding: 15px;
+    border-top: solid 1px lightgrey;
+    border-bottom: solid 1px lightgrey;
+  }
+  .txt-reviwes {
+    padding: 10px;
+    margin: 0px;
+  }
+  .name-rw {
+    padding: 10px;
+    margin-bottom: 0px;
+  }
+  .add-reviwes-txt-product {
+    padding-bottom: 25%;
+  }
+  .add-reviwes-box-name-email {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 10px 0px;
+  }
+  .add-reviwes-txt-name {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .add-reviwes-txt-email {
+    width: 100%;
+    margin: 0px;
+  }
+  .add-reviwes-send {
+    width: 100%;
+  }
+}
+
+@font-face {
+  font-family: 'Philosopher';
+  src: url(../fonts/Philosopher/Philosopher-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Philosopher';
+  src: url(../fonts/Philosopher/Philosopher-Italic.ttf);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Futurademic';
+  src: url(../fonts/Futurademic/futurademic.otf);
+}
+
+@font-face {
+  font-family: 'Cassandra';
+  src: url(../fonts/Cassandra/cassandra.ttf);
+}
+
+@font-face {
+  font-family: 'AdineKimberg';
+  src: url(../fonts/AdineKirnberg/AdineKirnberg.ttf);
+}
+
+.checkbox_form {
+  list-style-type: none;
+  margin-left: -15px;
+}
+
+.checkbox_form label {
+  color: black;
+  font-family: "Philosopher", serif;
+  font-size: 16px;
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=../css/main.css.map */

@@ -1,22 +1,85 @@
 {% extends 'index.html' %}
-
+{% load widget_tweaks %}
+{% load static from staticfiles %}
 
 {% block content %}
 
-    <form action="" method="get">
-        {{ filter.form.as_p }}
-        <input type="submit" />
-    </form>
-    <br>
-    {% for item in object_list %}
 
-        <a href="{% url 'item' item.pk  %}">
-        <img src="{{ item.title_image.url }}">
-        <p>{{ item.title }}</p>
-        </a>
+<section class="breadcrumbs">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="breadcrumbs-nav">
+                    <li class="breadcrumbs-nav-item"><a class="breadcrumbs-nav-link" href="{% url 'home' %}">Главная</a></li>
+                    <li class="breadcrumbs-nav-item">/</li>
+                    <li class="breadcrumbs-nav-item"><span class="breadcrumbs-nav-link">Каталог изделий</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="shops">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="shops-title">Каталог изделий</h1>
+            </div>
+            <div class="col-md-3">
+                <form action="" method="get">
 
-        <p>{{ item.specs_set.all.0.price }}</p>
 
-    {% endfor %}
+                    {% render_field filter.form.category class="checkbox_form" %}
+                    <p class="sort-form">Sort by: {% render_field filter.form.ordering onchange="this.form.submit()" %}</p>
+
+                <input type="submit" value="Choose" class="btn btn-default" style="margin-left: 20px"/>
+                </form>
+            </div>
+            <div class="col-md-9">
+                <div class="shops-box">
+                    <div class="shops-sortirovka">Отображать по
+                        <div class="dropdown show">
+                          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Популярности <img src="{% static 'products/img/arrow.png' %}" alt="#">
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Популярности</a>
+                            <a class="dropdown-item" href="#">Популярности</a>
+                            <a class="dropdown-item" href="#">Популярности</a>
+                            <a class="dropdown-item" href="#">Популярности</a>
+                            <a class="dropdown-item" href="#">Популярности</a>
+                          </div>
+                        </div>
+                    </div>
+
+                    {% include 'products/pagination_form.html' %}
+
+                </div>
+                <div class="shops-items">
+
+                    {% for item in object_list %}
+                    <div class="test test22">
+                        <a class="test-link" href="{% url 'item' item.pk  %}">
+                            <div class="shop-item">
+                                <img class="shop-item-likeimg" src="{% static 'products/img/icon-like-item.png' %}" alt="">
+                                <div class="test-test"><img class="shop-item-productimg" src="{{ item.title_image.url }}" alt=""></div>
+                                <div class="shop-item-name">{{ item.title }}</div>
+                                <div class="shop-item-prices">
+                                    <div class="shop-item-saleprice">{{ item.get_first_specs.price }} грн</div><div class="shop-item-price">{{ item.get_first_specs.price }} грн</div>
+                                </div>
+                             </div>
+                        </a>
+                    </div>
+                    {% endfor %}
+
+                </div>
+                 <div class="clearfix"></div>
+
+                    {% include 'products/pagination.html' %}
+
+        </div>
+    </div>
+    </div>
+</section>
+
 
 {% endblock content %}

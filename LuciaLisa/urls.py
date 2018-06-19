@@ -17,12 +17,14 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
-from products.views import HomeView, CategoryFilterView, ItemDetailView, update_size, FeedbackCreateView
+from products.views import HomeView, CategoryFilterView, ItemDetailView, update_size, FeedbackCreateView, search
 from cart.views import add_cart, cart_view, cart_remove
 from company.views import EmailCreateView
 
 urlpatterns = [
     url(r'^$', HomeView.as_view(), name='home'),
+    url(r'^search/$', search, name='search'),
+    url(r'^category/(?P<category_id>\d+)/$', HomeView.as_view(), name='category'),
 
     url(r'^catalogue/$', CategoryFilterView.as_view(), name='catalogue'),
     url(r'^catalogue/items/(?P<pk>\d+)/$', ItemDetailView.as_view(), name='item'),

@@ -1,0 +1,52 @@
+{% load mytemplatetags %}
+{% load static from staticfiles %}
+
+{% if is_paginated %}
+
+    <div class="shops-footer">
+        <div class="shops-footer-prev">
+            {% if page_obj.has_previous %}
+            <a class="shops-footer-prev-link-active" href="?{% url_replace request 'page' page_obj.previous_page_number %}">
+                <img class="shops-footer-prev-img" src="{% static 'products/img/arrow-left.png' %}" alt=""> Назад
+            </a>
+                {% else %}
+                <span class="shops-footer-prev-link">
+                <img class="shops-footer-prev-img" src="{% static 'products/img/arrow-left.png' %}" alt=""> Назад
+            </span>
+            {% endif %}
+        </div>
+
+
+        <div class="shops-footer-counter">
+
+
+            <ul class="shops-footer-counter-items">
+                {% for i in paginator.page_range %}
+                    {% if page_obj.number == i %}
+                        <li class="shops-footer-counter-item-active"><span
+                                class="shops-footer-counter-link-active">{{ i }}</span></li>
+                    {% else %}
+                        <li class="shops-footer-counter-item"><a class="shops-footer-counter-link"
+                                                                 href="?{% url_replace request 'page' i %}">{{ i }}</a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+
+        </div>
+
+        <div class="shops-footer-next">
+        {% if page_obj.has_next %}
+            <a class="shops-footer-next-link-active" href="?{% url_replace request 'page'  page_obj.next_page_number %}">Вперед
+                <img class="shops-footer-next-img" src="{% static 'products/img/arrow-right.png' %}" alt="">
+            </a>
+        {% else %}
+            <span class="shops-footer-next-link">Вперед
+                <img class="shops-footer-next-img" src="{% static 'products/img/arrow-right.png' %}" alt="">
+            </span>
+        {% endif %}
+        </div>
+    </div>
+
+{% endif %}

@@ -1,0 +1,17 @@
+{% load mytemplatetags %}
+<div class="shops-show" style="padding-right: 2px">Показать
+    <div class="dropdown show">
+        <form action="{% url 'catalogue' %}?paginate_by={{ paginate_by }}" method="get">
+{#            <input type="hidden" value="{{ request }}" name="queryset">#}
+            <select name="paginate_by" onchange="this.form.submit()" style="margin-left: 5px">
+                {% for items in page_items %}
+                    <option value="{{ items }}" {% if items == paginate_by %}selected{% endif %}>
+                         {{ items }}
+                    </option>
+                {% endfor %}
+            </select>
+        </form>
+    </div>
+</div>
+
+

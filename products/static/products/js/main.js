@@ -1,27 +1,9 @@
-$('document').ready(function(){
+$(document).ready(function(){
+  $(".slide-one").owlCarousel();
 
+  $(".slide-two").owlCarousel();
 
-  //var update_size = $('.update_size');
-  //
-  //  update_size.on('select', function(e){
-  //
-  //      var form = $(this).parent('form');
-  //
-  //      $.ajax({
-  //          url : form.attr('action'),
-  //          type : "POST",
-  //          data : form.serialize(),
-  //
-  //          success: function(json){
-  //              $('#price').text(json.price);
-  //          },
-  //          error: function(e){
-  //              console.log(e);
-  //          }
-  //      });
-  //
-  //  });
-    $('#id_size').change(function(e){
+  $('#id_size').change(function(e){
         //var item = $(this);
         //console.log(item.val());
         var form = $(this).parent('form');
@@ -76,7 +58,22 @@ $('document').ready(function(){
             });
         }
     });
+    });
+
+
 });
 
 
+$('.slide-one').owlCarousel({
+    animateOut: 'slideOutDown',
+    animateIn: 'flipInX',
+    items:1,
+    smartSpeed:450,
+    loop:true,
+    autoplay:true,
+    autoplayTimeout:100
+});
+
+$(".slide-two").owlCarousel({
+    items:3,
 });

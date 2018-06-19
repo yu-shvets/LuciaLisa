@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, HttpResponseRedirect
-from django.views.generic import TemplateView, DetailView
-from django_filters import FilterSet, ModelMultipleChoiceFilter
+from django.views.generic import TemplateView, DetailView, ListView
+from django_filters import FilterSet, ModelMultipleChoiceFilter, OrderingFilter
 from django import forms
 from django_filters.views import FilterView
 from .models import Category, Item, Specs
@@ -10,30 +10,57 @@ from django.urls import reverse
 from company.forms import EmailForm
 from django.views.generic.edit import CreateView
 from django.contrib.messages.views import SuccessMessageMixin
-from django.utils.formats import date_format
 from django.utils.dateformat import DateFormat
+from django.db.models import Q
+from django.contrib import messages
+from company.models import News
 
 
-class HomeView(TemplateView):
+class HomeView(ListView):
     template_name = 'index.html'
+    model = Item
+    queryset = Item.objects.filter(sales__isnull=False)
 
     def get_context_data(self, **kwargs):
         context = super(HomeView, self).get_context_data(**kwargs)
         context['form'] = EmailForm
+        context['categories'] = Category.objects.all()
+        context['news'] = News.objects.all()
         return context
+
+    def get_queryset(self):
+        if self.kwargs.get('category_id'):
+            return self.queryset.filter(category=self.kwargs['category_id'])
+        return self.queryset
 
 
 class CategoryFilter(FilterSet):
+
     category = ModelMultipleChoiceFilter(queryset=Category.objects.all(), widget=forms.CheckboxSelectMultiple)
 
     class Meta:
         model = Item
         fields = ['category']
 
+    ordering = OrderingFilter(
+        fields=(('specs__price', 'price'),)
+    )
+
 
 class CategoryFilterView(FilterView):
     template_name = 'products/catalogue.html'
     filterset_class = CategoryFilter
+    paginate_by = 4
+
+    def get_context_data(self, **kwargs):
+        context = super(CategoryFilterView, self).get_context_data(**kwargs)
+        context['paginate_by'] = int(self.request.GET.get('paginate_by', self.paginate_by))
+        return context
+
+    def get_paginate_by(self, queryset):
+        print('')
+        print(queryset)
+        return int(self.request.GET.get('paginate_by', self.paginate_by))
 
 
 class ItemDetailView(DetailView):
@@ -74,3 +101,13 @@ class FeedbackCreateView(SuccessMessageMixin, CreateView):
 
     def get_success_url(self):
         return reverse('item', args=(self.kwargs['item_id']))
+
+
+def search(request):
+    query = request.GET.get('query').strip()
+    if query:
+        items = Item.objects.filter(Q(title__icontains=query) |
+                                    Q(category__title__icontains=query))
+        return render(request, 'products/search_result.html', {'object_list': items, 'query': query})
+    messages.error(request, "Please, enter a search string.")
+    return HttpResponseRedirect(request.META.get('HTTP_REFERER'))

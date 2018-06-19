@@ -1,0 +1,22 @@
+{% extends 'index.html' %}
+
+
+{% block content %}
+
+    <h4 style="padding-left: 15px">You search for: {{ query }}</h4>
+
+    {% for item in object_list %}
+
+        <a href="{% url 'item' item.pk  %}">
+        <img src="{{ item.title_image.url }}">
+        <p>{{ item.title }}</p>
+        </a>
+
+        <p>{{ item.specs_set.all.0.price }}</p>
+
+    {% empty %}
+        <h3 style="margin-bottom: 200px; padding-left: 15px">No items to display</h3>
+
+    {% endfor %}
+
+{% endblock content %}
